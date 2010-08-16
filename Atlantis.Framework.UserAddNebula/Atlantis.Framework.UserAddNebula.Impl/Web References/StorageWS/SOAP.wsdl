@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:urn:gd-storage-service-um" xmlns:si="http://soapinterop.org/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:urn:gd-storage-service-um" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:urn:gd-storage-service-um">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="Response">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserAdd">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserUniqueId" type="xsd:string" />
+          <xsd:element name="Quota" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserAddResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+          <xsd:element name="SecretKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserDisable">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserDisableResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserEnable">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserEnableResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserInfo">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserUniqueId" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+          <xsd:element name="BandwidthStartDate" type="xsd:date" />
+          <xsd:element name="BandwidthEndDate" type="xsd:date" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserInfoDisk">
+        <xsd:sequence>
+          <xsd:element name="Quota" type="xsd:int" />
+          <xsd:element name="Used" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Bandwidth">
+        <xsd:sequence>
+          <xsd:element name="Date" type="xsd:date" />
+          <xsd:element name="Bytes" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BandwidthResults">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:Bandwidth[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="UserInfoResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+          <xsd:element name="SecretKey" type="xsd:string" />
+          <xsd:element name="Status" type="xsd:string" />
+          <xsd:element name="CreatedDate" type="xsd:dateTime" />
+          <xsd:element name="Disk" type="tns:UserInfoDisk" />
+          <xsd:element name="BandwidthResults" type="tns:BandwidthResults" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserKey">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+          <xsd:element name="NewKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserKeyResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+          <xsd:element name="SecretKey" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserModify">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+          <xsd:element name="Quota" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserModifyResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserRemove">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserRemoveResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserRestore">
+        <xsd:sequence>
+          <xsd:element name="ServiceManagerAccessKeyId" type="xsd:string" />
+          <xsd:element name="ServiceManagerSignature" type="xsd:string" />
+          <xsd:element name="UserAccessKeyId" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UserRestoreResponse">
+        <xsd:sequence>
+          <xsd:element name="Code" type="xsd:int" />
+          <xsd:element name="Description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UserAddRequest">
+    <wsdl:part name="UserAdd" type="tns:UserAdd" />
+  </wsdl:message>
+  <wsdl:message name="UserAddResponse">
+    <wsdl:part name="UserAddResponse" type="tns:UserAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserDisableRequest">
+    <wsdl:part name="UserDisable" type="tns:UserDisable" />
+  </wsdl:message>
+  <wsdl:message name="UserDisableResponse">
+    <wsdl:part name="UserDisableResponse" type="tns:UserDisableResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserEnableRequest">
+    <wsdl:part name="UserEnable" type="tns:UserEnable" />
+  </wsdl:message>
+  <wsdl:message name="UserEnableResponse">
+    <wsdl:part name="UserEnableResponse" type="tns:UserEnableResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserInfoRequest">
+    <wsdl:part name="UserInfo" type="tns:UserInfo" />
+  </wsdl:message>
+  <wsdl:message name="UserInfoResponse">
+    <wsdl:part name="UserInfoResponse" type="tns:UserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserKeyRequest">
+    <wsdl:part name="UserKey" type="tns:UserKey" />
+  </wsdl:message>
+  <wsdl:message name="UserKeyResponse">
+    <wsdl:part name="UserKeyResponse" type="tns:UserKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserModifyRequest">
+    <wsdl:part name="UserModify" type="tns:UserModify" />
+  </wsdl:message>
+  <wsdl:message name="UserModifyResponse">
+    <wsdl:part name="UserModifyResponse" type="tns:UserModifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserRemoveRequest">
+    <wsdl:part name="UserRemove" type="tns:UserRemove" />
+  </wsdl:message>
+  <wsdl:message name="UserRemoveResponse">
+    <wsdl:part name="UserRemoveResponse" type="tns:UserRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserRestoreRequest">
+    <wsdl:part name="UserRestore" type="tns:UserRestore" />
+  </wsdl:message>
+  <wsdl:message name="UserRestoreResponse">
+    <wsdl:part name="UserRestoreResponse" type="tns:UserRestoreResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GoDaddy_Storage_Service_User_Management_v_0_1PortType">
+    <wsdl:operation name="UserAdd">
+      <documentation>UserAdd</documentation>
+      <wsdl:input message="tns:UserAddRequest" />
+      <wsdl:output message="tns:UserAddResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserDisable">
+      <documentation>UserDisable</documentation>
+      <wsdl:input message="tns:UserDisableRequest" />
+      <wsdl:output message="tns:UserDisableResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserEnable">
+      <documentation>UserEnable</documentation>
+      <wsdl:input message="tns:UserEnableRequest" />
+      <wsdl:output message="tns:UserEnableResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserInfo">
+      <documentation>UserInfo</documentation>
+      <wsdl:input message="tns:UserInfoRequest" />
+      <wsdl:output message="tns:UserInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserKey">
+      <documentation>UserKey</documentation>
+      <wsdl:input message="tns:UserKeyRequest" />
+      <wsdl:output message="tns:UserKeyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserModify">
+      <documentation>UserModify</documentation>
+      <wsdl:input message="tns:UserModifyRequest" />
+      <wsdl:output message="tns:UserModifyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserRemove">
+      <documentation>UserRemove</documentation>
+      <wsdl:input message="tns:UserRemoveRequest" />
+      <wsdl:output message="tns:UserRemoveResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="UserRestore">
+      <documentation>UserRestore</documentation>
+      <wsdl:input message="tns:UserRestoreRequest" />
+      <wsdl:output message="tns:UserRestoreResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GoDaddy_Storage_Service_User_Management_v_0_1Binding" type="tns:GoDaddy_Storage_Service_User_Management_v_0_1PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="UserAdd">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserAdd" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserDisable">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserDisable" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserEnable">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserEnable" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserInfo">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserInfo" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserKey">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserKey" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserModify">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserModify" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserRemove">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserRemove" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserRestore">
+      <soap:operation soapAction="urn:gd-storage-service-um#UserRestore" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:gd-storage-service-um" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GoDaddy_Storage_Service_User_Management_v_0_1">
+    <wsdl:port name="GoDaddy_Storage_Service_User_Management_v_0_1Port" binding="tns:GoDaddy_Storage_Service_User_Management_v_0_1Binding">
+      <soap:address location="http://10.250.2.33/storage-service/SOAP.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
