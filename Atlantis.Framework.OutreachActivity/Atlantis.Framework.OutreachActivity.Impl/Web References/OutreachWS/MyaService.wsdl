@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://godaddy.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://godaddy.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://godaddy.com/">
+      <s:element name="Heartbeat">
+        <s:complexType />
+      </s:element>
+      <s:element name="HeartbeatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HeartbeatResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orionAccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginUtcTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endUtcTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountActivityResult" type="tns:AccountActivityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AccountActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BeginUtcTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndUtcTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DaysLeft" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentQuota" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmailsSent" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmailsScheduled" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainingEmails" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalAllFutureScheduledCampaigns" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalCampaignsSentInPast" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDetailedAccountActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orionAccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginUtcTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endUtcTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDetailedAccountActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDetailedAccountActivityResult" type="tns:DetailedAccountActivityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DetailedAccountActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AccountEmailCreditInfo" type="tns:AccountEmailCreditInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountStats" type="tns:AccountStats" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AccountEmailCreditInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentBillingCycleBeginUtcDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentBillingCycleEndUtcDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyAllowanceCredits" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyAllowanceCreditsUsed" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyAllowanceCreditsReserved" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MonthlyAllowanceCreditsAvailable" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsUsed" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsReserved" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsAvailable" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsTotal" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsTotalUsed" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackCreditsTotalReserved" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditsUsed" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditsReserved" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditsAvailable" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AccountStats">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ActiveCampaignsInDesign" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActiveCampaignsScheduled" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActiveCampaignsInProcess" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActiveCampaignsCompleted" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalActiveCampaigns" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletedCampaignsInDesign" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletedCampaignsScheduled" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletedCampaignsInProcess" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeletedCampaignsCompleted" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalDeletedCampaigns" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CalculateRequiredMailingPacksForDowngrade">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="orionAccountID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="beginUtcTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endUtcTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="targetPlanMonthlyEmails" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateRequiredMailingPacksForDowngradeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalculateRequiredMailingPacksForDowngradeResult" type="tns:DowngradeEligibilityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DowngradeEligibilityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequiredMailingPacks" type="tns:ArrayOfRequiredMailingPackInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="NegativeBalance" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequiredMailingPackInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequiredMailingPackInfo" nillable="true" type="tns:RequiredMailingPackInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequiredMailingPackInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="pf_id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MailingPackSize" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HeartbeatSoapIn">
+    <wsdl:part name="parameters" element="tns:Heartbeat" />
+  </wsdl:message>
+  <wsdl:message name="HeartbeatSoapOut">
+    <wsdl:part name="parameters" element="tns:HeartbeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountActivity" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailedAccountActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetDetailedAccountActivity" />
+  </wsdl:message>
+  <wsdl:message name="GetDetailedAccountActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetDetailedAccountActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateRequiredMailingPacksForDowngradeSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateRequiredMailingPacksForDowngrade" />
+  </wsdl:message>
+  <wsdl:message name="CalculateRequiredMailingPacksForDowngradeSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateRequiredMailingPacksForDowngradeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MyaServiceSoap">
+    <wsdl:operation name="Heartbeat">
+      <wsdl:input message="tns:HeartbeatSoapIn" />
+      <wsdl:output message="tns:HeartbeatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountActivity">
+      <wsdl:input message="tns:GetAccountActivitySoapIn" />
+      <wsdl:output message="tns:GetAccountActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailedAccountActivity">
+      <wsdl:input message="tns:GetDetailedAccountActivitySoapIn" />
+      <wsdl:output message="tns:GetDetailedAccountActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRequiredMailingPacksForDowngrade">
+      <wsdl:input message="tns:CalculateRequiredMailingPacksForDowngradeSoapIn" />
+      <wsdl:output message="tns:CalculateRequiredMailingPacksForDowngradeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyaServiceSoap" type="tns:MyaServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Heartbeat">
+      <soap:operation soapAction="http://godaddy.com/Heartbeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountActivity">
+      <soap:operation soapAction="http://godaddy.com/GetAccountActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailedAccountActivity">
+      <soap:operation soapAction="http://godaddy.com/GetDetailedAccountActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRequiredMailingPacksForDowngrade">
+      <soap:operation soapAction="http://godaddy.com/CalculateRequiredMailingPacksForDowngrade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MyaServiceSoap12" type="tns:MyaServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Heartbeat">
+      <soap12:operation soapAction="http://godaddy.com/Heartbeat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountActivity">
+      <soap12:operation soapAction="http://godaddy.com/GetAccountActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailedAccountActivity">
+      <soap12:operation soapAction="http://godaddy.com/GetDetailedAccountActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRequiredMailingPacksForDowngrade">
+      <soap12:operation soapAction="http://godaddy.com/CalculateRequiredMailingPacksForDowngrade" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyaService">
+    <wsdl:port name="MyaServiceSoap" binding="tns:MyaServiceSoap">
+      <soap:address location="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MyaServiceSoap12" binding="tns:MyaServiceSoap12">
+      <soap12:address location="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

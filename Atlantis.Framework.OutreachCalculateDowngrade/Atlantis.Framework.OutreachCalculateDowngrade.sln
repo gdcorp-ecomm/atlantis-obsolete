@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.OutreachCalculateDowngrade.Interface", "Atlantis.Framework.OutreachCalculateDowngrade.Interface\Atlantis.Framework.OutreachCalculateDowngrade.Interface.csproj", "{0B2306ED-5D81-4254-93BA-828561F6ED2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.OutreachCalculateDowngrade.Impl", "Atlantis.Framework.OutreachCalculateDowngrade.Impl\Atlantis.Framework.OutreachCalculateDowngrade.Impl.csproj", "{0672634C-6E6D-4218-BC65-0B6978766BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.OutreachCalculateDowngrade.Tests", "Atlantis.Framework.OutreachCalculateDowngrade.Tests\Atlantis.Framework.OutreachCalculateDowngrade.Tests.csproj", "{BEA3038D-8B8F-4059-8D9B-5E4FD3241EA9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = Atlantis.Framework.OutreachCalculateDowngrade.Impl\\Atlantis.Framework.OutreachCalculateDowngrade.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.OutreachCalculateDowngrade.Impl
+		SccLocalPath3 = Atlantis.Framework.OutreachCalculateDowngrade.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.OutreachCalculateDowngrade.Interface\\Atlantis.Framework.OutreachCalculateDowngrade.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.OutreachCalculateDowngrade.Interface
+		SccLocalPath4 = Atlantis.Framework.OutreachCalculateDowngrade.Interface
+		SccProjectUniqueName5 = Atlantis.Framework.OutreachCalculateDowngrade.Tests\\Atlantis.Framework.OutreachCalculateDowngrade.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.OutreachCalculateDowngrade.Tests
+		SccLocalPath5 = Atlantis.Framework.OutreachCalculateDowngrade.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2306ED-5D81-4254-93BA-828561F6ED2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2306ED-5D81-4254-93BA-828561F6ED2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2306ED-5D81-4254-93BA-828561F6ED2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2306ED-5D81-4254-93BA-828561F6ED2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0672634C-6E6D-4218-BC65-0B6978766BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0672634C-6E6D-4218-BC65-0B6978766BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0672634C-6E6D-4218-BC65-0B6978766BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0672634C-6E6D-4218-BC65-0B6978766BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA3038D-8B8F-4059-8D9B-5E4FD3241EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA3038D-8B8F-4059-8D9B-5E4FD3241EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA3038D-8B8F-4059-8D9B-5E4FD3241EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA3038D-8B8F-4059-8D9B-5E4FD3241EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

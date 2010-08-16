@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx?wsdl" docRef="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx" xmlns:q1="http://godaddy.com/" binding="q1:MyaServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://svc.e.marketing.dev.intranet-gdg.ide/MyaService.asmx" xmlns:q2="http://godaddy.com/" binding="q2:MyaServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
