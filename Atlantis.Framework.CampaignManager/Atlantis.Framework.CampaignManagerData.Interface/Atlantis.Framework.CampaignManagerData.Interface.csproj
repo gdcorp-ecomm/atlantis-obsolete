@@ -281,16 +281,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj">
-      <Project>{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}</Project>
-      <Name>Atlantis.Framework.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Atlantis.Framework.Entity.Interface\Atlantis.Framework.Entity.Interface.csproj">
-      <Project>{B2D782E9-1A7E-40A9-9B82-52A9AD23ADC6}</Project>
-      <Name>Atlantis.Framework.Entity.Interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Entities\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model.generated.cs</LastGenOutput>
@@ -298,6 +288,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Main\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj">
+      <Project>{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}</Project>
+      <Name>Atlantis.Framework.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atlantis.Framework.Entity.Interface\Atlantis.Framework.Entity.Interface.csproj">
+      <Project>{B2D782E9-1A7E-40A9-9B82-52A9AD23ADC6}</Project>
+      <Name>Atlantis.Framework.Entity.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
