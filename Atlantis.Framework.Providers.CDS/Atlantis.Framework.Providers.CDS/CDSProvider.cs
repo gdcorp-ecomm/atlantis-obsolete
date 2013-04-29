@@ -136,11 +136,13 @@ namespace Atlantis.Framework.Providers.CDS
       return finalContent;
     }
 
+    [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
     public T GetModel<T>(string query, IProviderContainer providerContainer) where T : new()
     {
       return GetModel<T>(query, providerContainer, null);
     }
 
+    [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
     public T GetModel<T>(string query, IProviderContainer providerContainer, Dictionary<string, string> customTokens) where T : new()
     {
       T model = new T();
@@ -159,11 +161,13 @@ namespace Atlantis.Framework.Providers.CDS
       return model;
     }
 
+    [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
     public string GetJson(string query, IProviderContainer providerContainer)
     {
       return GetJson(query, providerContainer, null);
     }
 
+    [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
     public string GetJson(string query, IProviderContainer providerContainer, Dictionary<string, string> customTokens)
     {
       string finalContent = string.Empty;
