@@ -30,10 +30,16 @@ namespace Atlantis.Framework.Providers.CDS.Tests
     public void GetJson()
     {
       var cdsProvider = HttpProviderContainer.Instance.Resolve<ICDSProvider>();
-      string cdsJson = cdsProvider.GetJson("content/en/sales/1/cdstesting/renderpipeline/condition-test", HttpProviderContainer.Instance);
+      string cdsJson = cdsProvider.GetJson("content/en/sales/1/cdstesting/renderpipeline/condition-test?docid=5181863ff778fc24c053cf3c", HttpProviderContainer.Instance);
       
       Assert.IsTrue(cdsJson.Contains("Your Country Site is United States or India"));
       Assert.IsTrue(cdsJson.Contains("$1000"));
+      
+      Assert.IsFalse(cdsJson.Contains("##if"));
+      Assert.IsFalse(cdsJson.Contains("##else"));
+      Assert.IsFalse(cdsJson.Contains("##endif"));
+      Assert.IsFalse(cdsJson.Contains("Australia"));
+      Assert.IsFalse(cdsJson.Contains("some other country"));
       
       Debug.WriteLine(cdsJson);
       Console.WriteLine(cdsJson);

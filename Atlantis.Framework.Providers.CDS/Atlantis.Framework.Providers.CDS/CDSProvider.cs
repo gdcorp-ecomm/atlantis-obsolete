@@ -17,7 +17,7 @@ namespace Atlantis.Framework.Providers.CDS
   {
     private static readonly RenderPipelineManager _cdsWidgetRenderPipelineManager = new RenderPipelineManager();
     private static readonly Regex _validMongoObjectIdRegex = new Regex(@"^[0-9a-fA-F]{24}$", RegexOptions.Compiled);
-    private static readonly Regex _widgetContentRegex = new Regex(@"""Content""\s*:\s*""(?<content>[^""\\]*(?:\\.[^""\\]*)*)""", RegexOptions.Compiled);
+    private static readonly Regex _widgetContentRegex = new Regex(@"""\s*:\s*""(?<content>[^""\\]*(?:\\.[^""\\]*)*)""", RegexOptions.Compiled);
 
     private readonly ISiteContext _siteContext;
     private readonly IShopperContext _shopperContext;
@@ -114,20 +114,20 @@ namespace Atlantis.Framework.Providers.CDS
       if (responseData.IsSuccess)
       {
         string content = ParseLegacyTokens(responseData.ResponseData, customTokens);
-        
+
         StringBuilder finalContentBuilder = new StringBuilder(content);
 
         MatchCollection widgetContentMatches = _widgetContentRegex.Matches(responseData.ResponseData);
-        
+
         foreach (Match widgetContentMatch in widgetContentMatches)
         {
-          string rawContent = widgetContentMatch.Groups["content"].Value;
+          string originalContent = widgetContentMatch.Groups["content"].Value;
 
-          IRenderContent renderContent = new CDSWidgetRenderContent(rawContent);
+          IRenderContent renderContent = new CDSWidgetRenderContent(originalContent);
 
           IProcessedRenderContent processedRenderContent = _cdsWidgetRenderPipelineManager.RenderContent(renderContent, providerContainer);
 
-          finalContentBuilder.Replace(rawContent, processedRenderContent.Content);
+          finalContentBuilder.Replace(originalContent, processedRenderContent.Content);
         }
 
         finalContent = finalContentBuilder.ToString();
