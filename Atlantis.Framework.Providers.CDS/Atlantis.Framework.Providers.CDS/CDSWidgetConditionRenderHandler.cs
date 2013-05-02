@@ -1,4 +1,6 @@
-﻿using Atlantis.Framework.Conditions.Interface;
+﻿using System.Text;
+using System.Text.RegularExpressions;
+using Atlantis.Framework.Conditions.Interface;
 using Atlantis.Framework.Interface;
 using Atlantis.Framework.Render.ExpressionParser;
 using Atlantis.Framework.Render.MarkupParser;
@@ -12,16 +14,29 @@ namespace Atlantis.Framework.Providers.CDS
     private const string CARRAIGE_RETURN_ENCODED = "\\r\\n";
     private const string CARRAIGE_RETURN_DECODED = "\r\n";
 
+    private static readonly Regex _widgetContentRegex = new Regex(@"""\s*:\s*""(?<content>[^""\\]*(?:\\.[^""\\]*)*)""", RegexOptions.Compiled);
+
     public void ProcessContent(IProcessedRenderContent processRenderContent, IProviderContainer providerContainer)
     {
       ExpressionParserManager expressionParserManager = new ExpressionParserManager(providerContainer);
       expressionParserManager.EvaluateExpressionHandler += ConditionHandlerManager.EvaluateCondition;
 
-      processRenderContent.OverWriteContent(processRenderContent.Content.Replace(CARRAIGE_RETURN_ENCODED, CARRAIGE_RETURN_DECODED));
+      StringBuilder finalContentBuilder = new StringBuilder(processRenderContent.Content);
 
-      string modifiedContent = MarkupParserManager.ParseAndEvaluate(processRenderContent.Content, PRE_PROCESSOR_PREFIX, expressionParserManager.EvaluateExpression);
+      MatchCollection widgetContentMatches = _widgetContentRegex.Matches(processRenderContent.Content);
 
-      processRenderContent.OverWriteContent(modifiedContent.Replace(CARRAIGE_RETURN_DECODED, CARRAIGE_RETURN_ENCODED));
+      foreach (Match widgetContentMatch in widgetContentMatches)
+      {
+        string widgetContent = widgetContentMatch.Groups["content"].Value;
+
+        string modifiedContent = MarkupParserManager.ParseAndEvaluate(widgetContent.Replace(CARRAIGE_RETURN_ENCODED, CARRAIGE_RETURN_DECODED), 
+                                                                      PRE_PROCESSOR_PREFIX, 
+                                                                      expressionParserManager.EvaluateExpression);
+
+        finalContentBuilder.Replace(widgetContent, modifiedContent.Replace(CARRAIGE_RETURN_DECODED, CARRAIGE_RETURN_ENCODED));
+      }
+
+      processRenderContent.OverWriteContent(finalContentBuilder.ToString());
     }
   }
 }

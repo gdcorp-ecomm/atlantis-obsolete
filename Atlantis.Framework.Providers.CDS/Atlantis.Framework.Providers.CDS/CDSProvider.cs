@@ -17,7 +17,6 @@ namespace Atlantis.Framework.Providers.CDS
   {
     private static readonly RenderPipelineManager _cdsWidgetRenderPipelineManager = new RenderPipelineManager();
     private static readonly Regex _validMongoObjectIdRegex = new Regex(@"^[0-9a-fA-F]{24}$", RegexOptions.Compiled);
-    private static readonly Regex _widgetContentRegex = new Regex(@"""\s*:\s*""(?<content>[^""\\]*(?:\\.[^""\\]*)*)""", RegexOptions.Compiled);
 
     private readonly ISiteContext _siteContext;
     private readonly IShopperContext _shopperContext;
@@ -103,7 +102,7 @@ namespace Atlantis.Framework.Providers.CDS
       return finalQuery;
     }
 
-    private string ProcessAndRenderRequest(string query, bool bypassCache, IProviderContainer providerContainer, Dictionary<string, string> customTokens)
+    private string ProcessAndRenderRequest(string query, bool bypassCache, Dictionary<string, string> customTokens)
     {
       CDSRequestData requestData = new CDSRequestData(_shopperContext.ShopperId, string.Empty, string.Empty, _siteContext.Pathway, _siteContext.PageCount, query);
 
@@ -115,42 +114,31 @@ namespace Atlantis.Framework.Providers.CDS
       {
         string content = ParseLegacyTokens(responseData.ResponseData, customTokens);
 
-        StringBuilder finalContentBuilder = new StringBuilder(content);
+        IRenderContent renderContent = new CDSWidgetRenderContent(content);
 
-        MatchCollection widgetContentMatches = _widgetContentRegex.Matches(responseData.ResponseData);
+        IProcessedRenderContent processedRenderContent = _cdsWidgetRenderPipelineManager.RenderContent(renderContent, Container);
 
-        foreach (Match widgetContentMatch in widgetContentMatches)
-        {
-          string originalContent = widgetContentMatch.Groups["content"].Value;
-
-          IRenderContent renderContent = new CDSWidgetRenderContent(originalContent);
-
-          IProcessedRenderContent processedRenderContent = _cdsWidgetRenderPipelineManager.RenderContent(renderContent, providerContainer);
-
-          finalContentBuilder.Replace(originalContent, processedRenderContent.Content);
-        }
-
-        finalContent = finalContentBuilder.ToString();
+        finalContent = processedRenderContent.Content;
       }
 
       return finalContent;
     }
 
     [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
-    public T GetModel<T>(string query, IProviderContainer providerContainer) where T : new()
+    public T GetModel<T>(string query) where T : new()
     {
-      return GetModel<T>(query, providerContainer, null);
+      return GetModel<T>(query, null);
     }
 
     [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
-    public T GetModel<T>(string query, IProviderContainer providerContainer, Dictionary<string, string> customTokens) where T : new()
+    public T GetModel<T>(string query, Dictionary<string, string> customTokens) where T : new()
     {
       T model = new T();
       var serializer = new JavaScriptSerializer();
 
       try
       {
-        string finalContent = ProcessAndRenderRequest(query, false, providerContainer, customTokens);
+        string finalContent = ProcessAndRenderRequest(query, false, customTokens);
         model = serializer.Deserialize<T>(finalContent);
       }
       catch (Exception ex)
@@ -162,13 +150,13 @@ namespace Atlantis.Framework.Providers.CDS
     }
 
     [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
-    public string GetJson(string query, IProviderContainer providerContainer)
+    public string GetJson(string query)
     {
-      return GetJson(query, providerContainer, null);
+      return GetJson(query, null);
     }
 
     [Obsolete("Please use the new Atlantis.Framework.Providers.ICDSContent provider")]
-    public string GetJson(string query, IProviderContainer providerContainer, Dictionary<string, string> customTokens)
+    public string GetJson(string query, Dictionary<string, string> customTokens)
     {
       string finalContent = string.Empty;
 
@@ -177,7 +165,7 @@ namespace Atlantis.Framework.Providers.CDS
 
       try
       {
-        finalContent = ProcessAndRenderRequest(query, bypassCache, providerContainer, customTokens);
+        finalContent = ProcessAndRenderRequest(query, bypassCache, customTokens);
       }
       catch (Exception ex)
       {

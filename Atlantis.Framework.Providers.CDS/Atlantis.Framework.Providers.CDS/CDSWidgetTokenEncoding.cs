@@ -4,14 +4,14 @@ namespace Atlantis.Framework.Providers.CDS
 {
   internal class CDSWidgetTokenEncoding : ITokenEncoding
   {
-    private const string _ENCODEDQUOTE = "\\\\\\\"";
-    private const string _QUOTE = "\"";
+    private const string ENCODED_QUOTE = "\\\\\\\"";
+    private const string QUOTE = "\"";
 
     public string DecodeTokenData(string rawTokenData)
     {
       if (!string.IsNullOrEmpty(rawTokenData))
       {
-        return rawTokenData.Replace(_ENCODEDQUOTE, _QUOTE);
+        return rawTokenData.Replace(ENCODED_QUOTE, QUOTE);
       }
       else
       {
@@ -23,7 +23,7 @@ namespace Atlantis.Framework.Providers.CDS
     {
       if (!string.IsNullOrEmpty(tokenResult))
       {
-        return tokenResult.Replace(_QUOTE, _ENCODEDQUOTE);
+        return tokenResult.Replace(QUOTE, ENCODED_QUOTE);
       }
       else
       {
