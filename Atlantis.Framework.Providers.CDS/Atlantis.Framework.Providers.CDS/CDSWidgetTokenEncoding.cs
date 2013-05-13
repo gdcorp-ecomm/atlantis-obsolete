@@ -4,7 +4,7 @@ namespace Atlantis.Framework.Providers.CDS
 {
   internal class CDSWidgetTokenEncoding : ITokenEncoding
   {
-    private const string ENCODED_QUOTE = "\\\\\\\"";
+    private const string ENCODED_QUOTE = "\\\"";
     private const string QUOTE = "\"";
 
     public string DecodeTokenData(string rawTokenData)
