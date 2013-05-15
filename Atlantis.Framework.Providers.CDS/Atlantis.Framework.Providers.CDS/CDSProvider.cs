@@ -24,6 +24,8 @@ namespace Atlantis.Framework.Providers.CDS
     static CDSProvider()
     {
       _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetConditionRenderHandler());
+      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetPlaceHolderRenderHandler());
+      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetConditionRenderHandler());
       _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetTokenRenderHandler());
     }
 
