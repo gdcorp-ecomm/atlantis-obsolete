@@ -107,6 +107,10 @@
       <Project>{0d7f076f-1809-437b-b045-e35a7e68e423}</Project>
       <Name>Atlantis.Framework.Render.Pipeline.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\4.0\Render\RenderPipeline\Atlantis.Framework.Render.Pipeline\Atlantis.Framework.Render.Pipeline.csproj">
+      <Project>{68764d92-7cd9-45fb-b650-1429656dcf14}</Project>
+      <Name>Atlantis.Framework.Render.Pipeline</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

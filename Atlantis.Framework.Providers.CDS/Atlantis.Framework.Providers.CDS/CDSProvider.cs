@@ -9,6 +9,7 @@ using Atlantis.Framework.Providers.Interface.CDS;
 using System.Web;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
+using Atlantis.Framework.Render.Pipeline;
 using Atlantis.Framework.Render.Pipeline.Interface;
 
 namespace Atlantis.Framework.Providers.CDS
