@@ -9,26 +9,16 @@ using Atlantis.Framework.Providers.Interface.CDS;
 using System.Web;
 using System.Collections.Specialized;
 using System.Text.RegularExpressions;
-using Atlantis.Framework.Render.Pipeline;
-using Atlantis.Framework.Render.Pipeline.Interface;
+using Atlantis.Framework.Tokens.Interface;
 
 namespace Atlantis.Framework.Providers.CDS
 {
   public class CDSProvider : ProviderBase, ICDSProvider
   {
-    private static readonly RenderPipelineManager _cdsWidgetRenderPipelineManager = new RenderPipelineManager();
     private static readonly Regex _validMongoObjectIdRegex = new Regex(@"^[0-9a-fA-F]{24}$", RegexOptions.Compiled);
 
     private readonly ISiteContext _siteContext;
     private readonly IShopperContext _shopperContext;
-
-    static CDSProvider()
-    {
-      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetConditionRenderHandler());
-      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetPlaceHolderRenderHandler());
-      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetConditionRenderHandler());
-      _cdsWidgetRenderPipelineManager.AddRenderHandler(new CDSWidgetTokenRenderHandler());
-    }
 
     public CDSProvider(IProviderContainer container) : base(container)
     {
@@ -116,12 +106,7 @@ namespace Atlantis.Framework.Providers.CDS
       if (responseData.IsSuccess)
       {
         string content = ParseLegacyTokens(responseData.ResponseData, customTokens);
-
-        IRenderContent renderContent = new CDSWidgetRenderContent(content);
-
-        IProcessedRenderContent processedRenderContent = _cdsWidgetRenderPipelineManager.RenderContent(renderContent, Container);
-
-        finalContent = processedRenderContent.Content;
+        TokenManager.ReplaceTokens(content, Container, new CDSWidgetTokenEncoding(), out finalContent);
       }
 
       return finalContent;
