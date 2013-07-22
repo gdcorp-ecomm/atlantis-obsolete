@@ -97,7 +97,7 @@ namespace Atlantis.Framework.Providers.CDS
 
     private string ProcessAndRenderRequest(string query, bool bypassCache, Dictionary<string, string> customTokens)
     {
-      CDSRequestData requestData = new CDSRequestData(_shopperContext.ShopperId, string.Empty, string.Empty, _siteContext.Pathway, _siteContext.PageCount, query);
+      CDSRequestData requestData = new CDSRequestData(query);
 
       string finalContent = string.Empty;
 
