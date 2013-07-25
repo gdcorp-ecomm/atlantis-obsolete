@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{49305A40-4D19-440B-9DE3-CF7D3518EDC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BF21F807-46D3-48EF-A403-790018C3B73F}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.AuctionSearch.vsmdi = Atlantis.Framework.AuctionSearch.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.AuctionSearch.Impl", "Atlantis.Framework.AuctionSearch.Impl\Atlantis.Framework.AuctionSearch.Impl.csproj", "{8D78694A-D37A-40D5-9EAC-D92DB363FFEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A} = {F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.AuctionSearch.Interface", "Atlantis.Framework.AuctionSearch.Interface\Atlantis.Framework.AuctionSearch.Interface.csproj", "{334C28EE-AD4D-4535-8533-831DE3553938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.AuctionSearch.Tests", "Atlantis.Framework.AuctionSearch.Tests\Atlantis.Framework.AuctionSearch.Tests.csproj", "{DAFFF749-4B1D-4E75-9381-01A5F0BCE803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Auction.Interface", "..\Atlantis.Framework.Auction.Interface\Atlantis.Framework.Auction.Interface\Atlantis.Framework.Auction.Interface.csproj", "{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.AuctionSearch.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.AuctionSearch.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName3 = Atlantis.Framework.AuctionSearch.Impl\\Atlantis.Framework.AuctionSearch.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.AuctionSearch.Impl
+		SccLocalPath3 = Atlantis.Framework.AuctionSearch.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.AuctionSearch.Interface\\Atlantis.Framework.AuctionSearch.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.AuctionSearch.Interface
+		SccLocalPath4 = Atlantis.Framework.AuctionSearch.Interface
+		SccProjectUniqueName5 = Atlantis.Framework.AuctionSearch.Tests\\Atlantis.Framework.AuctionSearch.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.AuctionSearch.Tests
+		SccLocalPath5 = Atlantis.Framework.AuctionSearch.Tests
+		SccProjectUniqueName6 = ..\\Atlantis.Framework.Auction.Interface\\Atlantis.Framework.Auction.Interface\\Atlantis.Framework.Auction.Interface.csproj
+		SccProjectName6 = ../Atlantis.Framework.Auction.Interface/Atlantis.Framework.Auction.Interface
+		SccLocalPath6 = ..\\Atlantis.Framework.Auction.Interface\\Atlantis.Framework.Auction.Interface
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.AuctionSearch.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D78694A-D37A-40D5-9EAC-D92DB363FFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D78694A-D37A-40D5-9EAC-D92DB363FFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D78694A-D37A-40D5-9EAC-D92DB363FFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D78694A-D37A-40D5-9EAC-D92DB363FFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334C28EE-AD4D-4535-8533-831DE3553938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334C28EE-AD4D-4535-8533-831DE3553938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334C28EE-AD4D-4535-8533-831DE3553938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334C28EE-AD4D-4535-8533-831DE3553938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFFF749-4B1D-4E75-9381-01A5F0BCE803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFFF749-4B1D-4E75-9381-01A5F0BCE803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFFF749-4B1D-4E75-9381-01A5F0BCE803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFFF749-4B1D-4E75-9381-01A5F0BCE803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6601CD9-BFBC-40DC-9FE0-65DDB1A58B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {49305A40-4D19-440B-9DE3-CF7D3518EDC1}
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {49305A40-4D19-440B-9DE3-CF7D3518EDC1}
+	EndGlobalSection
+EndGlobal

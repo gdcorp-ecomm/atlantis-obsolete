@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.BillingOrionUpgradeInfo.Impl", "Atlantis.Framework.BillingOrionUpgradeInfo.Impl\Atlantis.Framework.BillingOrionUpgradeInfo.Impl.csproj", "{246C2CC9-FB38-4616-9706-B2B67F902100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.BillingOrionUpgradeInfo.Interface", "Atlantis.Framework.BillingOrionUpgradeInfo.Interface\Atlantis.Framework.BillingOrionUpgradeInfo.Interface.csproj", "{014AFCE5-F9C3-47CC-9609-11597A4E8DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.BillingOrionUpgradeInfo.Tests", "Atlantis.Framework.BillingOrionUpgradeInfo.Tests\Atlantis.Framework.BillingOrionUpgradeInfo.Tests.csproj", "{634E4C56-FFCE-45B0-836C-04B080417F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{99F1044D-5A09-4B24-960F-9B6507627842}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.BillingOrionUpgradeInfo.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.BillingOrionUpgradeInfo.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.BillingOrionUpgradeInfo.Impl\\Atlantis.Framework.BillingOrionUpgradeInfo.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.BillingOrionUpgradeInfo.Impl
+		SccLocalPath3 = Atlantis.Framework.BillingOrionUpgradeInfo.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.BillingOrionUpgradeInfo.Interface\\Atlantis.Framework.BillingOrionUpgradeInfo.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.BillingOrionUpgradeInfo.Interface
+		SccLocalPath4 = Atlantis.Framework.BillingOrionUpgradeInfo.Interface
+		SccProjectUniqueName5 = Atlantis.Framework.BillingOrionUpgradeInfo.Tests\\Atlantis.Framework.BillingOrionUpgradeInfo.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.BillingOrionUpgradeInfo.Tests
+		SccLocalPath5 = Atlantis.Framework.BillingOrionUpgradeInfo.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{246C2CC9-FB38-4616-9706-B2B67F902100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246C2CC9-FB38-4616-9706-B2B67F902100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246C2CC9-FB38-4616-9706-B2B67F902100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246C2CC9-FB38-4616-9706-B2B67F902100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014AFCE5-F9C3-47CC-9609-11597A4E8DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014AFCE5-F9C3-47CC-9609-11597A4E8DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014AFCE5-F9C3-47CC-9609-11597A4E8DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014AFCE5-F9C3-47CC-9609-11597A4E8DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634E4C56-FFCE-45B0-836C-04B080417F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634E4C56-FFCE-45B0-836C-04B080417F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634E4C56-FFCE-45B0-836C-04B080417F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634E4C56-FFCE-45B0-836C-04B080417F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {99F1044D-5A09-4B24-960F-9B6507627842}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {99F1044D-5A09-4B24-960F-9B6507627842}
+	EndGlobalSection
+EndGlobal

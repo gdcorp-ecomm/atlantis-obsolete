@@ -1,0 +1,13 @@
+﻿The GSA’s spidered your test content and you can access it from the following URL’s:
+ 
+XML: http://search-v01.prod.mesa1.gdg/search?site=fos_test_parking&output=xml_no_dtd&oe=UTF-8&ie=UTF-8&client=godaddy_frontend&q=CASH&filter=0
+ 
+Web: http://search-v01.prod.mesa1.gdg/search?site=fos_test_parking&client=godaddy_frontend&output=xml_no_dtd&proxystylesheet=godaddy_frontend&proxycustom=%3CHOME/%3E
+ 
+The first link is roughly what we use in the Help Center then we parse out the XML and display what we need.  Set ‘q’ to be anything you would like to search for.  Presently it’s set to CASH.
+ 
+The second is merely a tester that the GSA’s provide and give results al la Google’s regular search.
+ 
+The key information is the ‘site’ parameter which is actually the name of the collection: fos_test_parking.
+ 
+More information on the Search API can be found at http://code.google.com/apis/searchappliance/documentation/64/xml_reference.html, but feel free to send any questions my way and I’ll be happy to help.

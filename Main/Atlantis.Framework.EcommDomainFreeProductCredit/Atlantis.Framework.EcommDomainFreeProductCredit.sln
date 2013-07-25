@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.EcommDomainFreeProductCredit.Interface", "Atlantis.Framework.EcommDomainFreeProductCredit.Interface\Atlantis.Framework.EcommDomainFreeProductCredit.Interface.csproj", "{F1B41689-DE75-448C-B8A3-3B807DA7F7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.EcommDomainFreeProductCredit.Impl", "Atlantis.Framework.EcommDomainFreeProductCredit.Impl\Atlantis.Framework.EcommDomainFreeProductCredit.Impl.csproj", "{C1178BF4-6D04-4FEA-9049-1CB9C1DE70C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.EcommDomainFreeProductCreditTest", "Atlantis.Framework.EcommDomainFreeProductCreditTest\Atlantis.Framework.EcommDomainFreeProductCreditTest.csproj", "{C38E45DC-9B7B-4159-9B97-6224E614D693}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C35E75F-0F87-42DA-B042-033126C6508C}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.EcommDomainFreeProductCredit.vsmdi = Atlantis.Framework.EcommDomainFreeProductCredit.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectName2 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccLocalPath2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = Atlantis.Framework.EcommDomainFreeProductCredit.Impl\\Atlantis.Framework.EcommDomainFreeProductCredit.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.EcommDomainFreeProductCredit.Impl
+		SccLocalPath4 = Atlantis.Framework.EcommDomainFreeProductCredit.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.EcommDomainFreeProductCredit.Interface\\Atlantis.Framework.EcommDomainFreeProductCredit.Interface.csproj
+		SccProjectName5 = Atlantis.Framework.EcommDomainFreeProductCredit.Interface
+		SccLocalPath5 = Atlantis.Framework.EcommDomainFreeProductCredit.Interface
+		SccProjectUniqueName6 = Atlantis.Framework.EcommDomainFreeProductCreditTest\\Atlantis.Framework.EcommDomainFreeProductCreditTest.csproj
+		SccProjectName6 = Atlantis.Framework.EcommDomainFreeProductCreditTest
+		SccLocalPath6 = Atlantis.Framework.EcommDomainFreeProductCreditTest
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.EcommDomainFreeProductCredit.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B41689-DE75-448C-B8A3-3B807DA7F7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B41689-DE75-448C-B8A3-3B807DA7F7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B41689-DE75-448C-B8A3-3B807DA7F7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B41689-DE75-448C-B8A3-3B807DA7F7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1178BF4-6D04-4FEA-9049-1CB9C1DE70C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1178BF4-6D04-4FEA-9049-1CB9C1DE70C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1178BF4-6D04-4FEA-9049-1CB9C1DE70C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1178BF4-6D04-4FEA-9049-1CB9C1DE70C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38E45DC-9B7B-4159-9B97-6224E614D693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38E45DC-9B7B-4159-9B97-6224E614D693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38E45DC-9B7B-4159-9B97-6224E614D693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38E45DC-9B7B-4159-9B97-6224E614D693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

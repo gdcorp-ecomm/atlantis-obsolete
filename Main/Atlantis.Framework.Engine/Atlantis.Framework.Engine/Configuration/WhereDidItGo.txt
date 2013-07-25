@@ -1,0 +1,1 @@
+﻿atlantis.config moved to $/.../AtlantisFramework/Config (next to Main in the folder structure).  Check out and update it there to reserve your request #

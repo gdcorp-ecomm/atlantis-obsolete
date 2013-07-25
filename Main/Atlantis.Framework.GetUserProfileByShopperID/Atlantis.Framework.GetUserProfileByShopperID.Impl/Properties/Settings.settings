@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Atlantis.Framework.GetUserProfileByShopperID.Impl.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Atlantis_Framework_GetUserProfileByShopperID_Impl_UserProfileWS_UserProfile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.dev.commonprofile-com.ide/UserProfile.asmx</Value>
+    </Setting>
+    <Setting Name="Atlantis_Framework_GetUserProfileByShopperID_Impl_CommonProfileWS_UserProfile" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.dev.commonprofile-com.ide/UserProfile.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

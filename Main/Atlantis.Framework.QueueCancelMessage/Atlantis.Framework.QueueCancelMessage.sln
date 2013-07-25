@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9AE693F-74D7-444F-9F9F-162B0C9D5B60}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.QueueCancelMessage.vsmdi = Atlantis.Framework.QueueCancelMessage.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.QueueCancelMessage.Interface", "Atlantis.Framework.QueueCancelMessage.Interface\Atlantis.Framework.QueueCancelMessage.Interface.csproj", "{616C9E14-2C67-40EA-8C1B-6E2CD0CB244A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.QueueCancelMessage.Impl", "Atlantis.Framework.QueueCancelMessage.Impl\Atlantis.Framework.QueueCancelMessage.Impl.csproj", "{987AA941-F7FC-44A2-85DA-91F1FC59A4AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.QueueCancelMessage.Tests", "Atlantis.Framework.QueueCancelMessage.Tests\Atlantis.Framework.QueueCancelMessage.Tests.csproj", "{897E11BB-62A2-4A81-82A0-0D79FBAB5112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F142F74A-E98F-422E-BABE-904D32C6FD14}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.QueueCancelMessage.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.QueueCancelMessage.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName3 = Atlantis.Framework.QueueCancelMessage.Impl\\Atlantis.Framework.QueueCancelMessage.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.QueueCancelMessage.Impl
+		SccLocalPath3 = Atlantis.Framework.QueueCancelMessage.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.QueueCancelMessage.Interface\\Atlantis.Framework.QueueCancelMessage.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.QueueCancelMessage.Interface
+		SccLocalPath4 = Atlantis.Framework.QueueCancelMessage.Interface
+		SccProjectUniqueName5 = Atlantis.Framework.QueueCancelMessage.Tests\\Atlantis.Framework.QueueCancelMessage.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.QueueCancelMessage.Tests
+		SccLocalPath5 = Atlantis.Framework.QueueCancelMessage.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.QueueCancelMessage.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{616C9E14-2C67-40EA-8C1B-6E2CD0CB244A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616C9E14-2C67-40EA-8C1B-6E2CD0CB244A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616C9E14-2C67-40EA-8C1B-6E2CD0CB244A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616C9E14-2C67-40EA-8C1B-6E2CD0CB244A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987AA941-F7FC-44A2-85DA-91F1FC59A4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987AA941-F7FC-44A2-85DA-91F1FC59A4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987AA941-F7FC-44A2-85DA-91F1FC59A4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987AA941-F7FC-44A2-85DA-91F1FC59A4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897E11BB-62A2-4A81-82A0-0D79FBAB5112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897E11BB-62A2-4A81-82A0-0D79FBAB5112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897E11BB-62A2-4A81-82A0-0D79FBAB5112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897E11BB-62A2-4A81-82A0-0D79FBAB5112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {F142F74A-E98F-422E-BABE-904D32C6FD14}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {F142F74A-E98F-422E-BABE-904D32C6FD14}
+	EndGlobalSection
+EndGlobal

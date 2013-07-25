@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPrivateStoreSettings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="marketplaceShopID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="previewData" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isSecureConnection" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrivateStoreSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPrivateStoreSettingsResult" type="tns:PrivateStoreSettings" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PrivateStoreSettings">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseState" type="tns:ResponseStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="MarketplaceShopID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarketplaceShopName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MarketplaceStoreUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsStoreHeaderImageOn" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreHeaderImageUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreTagLine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreHomePageText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreHomePageUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPreview" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:StatusCode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StackTrace" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="StatusCode">
+        <s:restriction base="s:string">
+          <s:enumeration value="Failure" />
+          <s:enumeration value="Success" />
+          <s:enumeration value="Maintenance" />
+          <s:enumeration value="Timeout" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPrivateStoreSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPrivateStoreSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetPrivateStoreSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPrivateStoreSettingsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PrivateStoreSoap">
+    <wsdl:operation name="GetPrivateStoreSettings">
+      <wsdl:input message="tns:GetPrivateStoreSettingsSoapIn" />
+      <wsdl:output message="tns:GetPrivateStoreSettingsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PrivateStoreSoap" type="tns:PrivateStoreSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPrivateStoreSettings">
+      <soap:operation soapAction="http://tempuri.org/GetPrivateStoreSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PrivateStoreSoap12" type="tns:PrivateStoreSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPrivateStoreSettings">
+      <soap12:operation soapAction="http://tempuri.org/GetPrivateStoreSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PrivateStore">
+    <wsdl:port name="PrivateStoreSoap" binding="tns:PrivateStoreSoap">
+      <soap:address location="http://g1dwproxima01:9003/PrivateStore.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PrivateStoreSoap12" binding="tns:PrivateStoreSoap12">
+      <soap12:address location="http://g1dwproxima01:9003/PrivateStore.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

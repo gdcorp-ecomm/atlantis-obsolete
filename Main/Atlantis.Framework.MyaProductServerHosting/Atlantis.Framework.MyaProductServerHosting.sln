@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductServerHosting.Impl", "Atlantis.Framework.MyaProductServerHosting.Impl\Atlantis.Framework.MyaProductServerHosting.Impl.csproj", "{19682AB2-1682-4842-8277-912A9D8FD852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductServerHosting.Interface", "Atlantis.Framework.MyaProductServerHosting.Interface\Atlantis.Framework.MyaProductServerHosting.Interface.csproj", "{01C37481-0858-4E42-BF4F-F305C00FF181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProduct.Interface", "..\Atlantis.Framework.MyaProduct\Atlantis.Framework.MyaProduct.Interface\Atlantis.Framework.MyaProduct.Interface.csproj", "{E0BF15B6-2A3A-4EE9-8080-495678392100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductServerHosting.Tests", "Atlantis.Framework.MyaProductServerHosting.Tests\Atlantis.Framework.MyaProductServerHosting.Tests.csproj", "{A732E4BF-C604-462C-A679-ADE3FA39F5D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7DFBFA37-80A3-4614-BF2D-D5235EBFA860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DataCache", "..\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache.csproj", "{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.MyaProductServerHosting.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.MyaProductServerHosting.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface\\Atlantis.Framework.MyaProduct.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.MyaProductServerHosting.sln
+		SccProjectName2 = ../Atlantis.Framework.MyaProduct/Atlantis.Framework.MyaProduct.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface
+		SccProjectUniqueName3 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectTopLevelParentUniqueName3 = Atlantis.Framework.MyaProductServerHosting.sln
+		SccProjectName3 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccLocalPath3 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccProjectUniqueName4 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache.csproj
+		SccProjectTopLevelParentUniqueName4 = Atlantis.Framework.MyaProductServerHosting.sln
+		SccProjectName4 = ../Atlantis.Framework.DataCache/Atlantis.Framework.DataCache
+		SccLocalPath4 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache
+		SccLocalPath5 = .
+		SccProjectUniqueName6 = Atlantis.Framework.MyaProductServerHosting.Impl\\Atlantis.Framework.MyaProductServerHosting.Impl.csproj
+		SccProjectName6 = Atlantis.Framework.MyaProductServerHosting.Impl
+		SccLocalPath6 = Atlantis.Framework.MyaProductServerHosting.Impl
+		SccProjectUniqueName7 = Atlantis.Framework.MyaProductServerHosting.Tests\\Atlantis.Framework.MyaProductServerHosting.Tests.csproj
+		SccProjectName7 = Atlantis.Framework.MyaProductServerHosting.Tests
+		SccLocalPath7 = Atlantis.Framework.MyaProductServerHosting.Tests
+		SccProjectUniqueName8 = Atlantis.Framework.MyaProductServerHosting.Interface\\Atlantis.Framework.MyaProductServerHosting.Interface.csproj
+		SccProjectName8 = Atlantis.Framework.MyaProductServerHosting.Interface
+		SccLocalPath8 = Atlantis.Framework.MyaProductServerHosting.Interface
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.MyaProductServerHosting.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19682AB2-1682-4842-8277-912A9D8FD852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19682AB2-1682-4842-8277-912A9D8FD852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19682AB2-1682-4842-8277-912A9D8FD852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19682AB2-1682-4842-8277-912A9D8FD852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C37481-0858-4E42-BF4F-F305C00FF181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C37481-0858-4E42-BF4F-F305C00FF181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C37481-0858-4E42-BF4F-F305C00FF181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C37481-0858-4E42-BF4F-F305C00FF181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A732E4BF-C604-462C-A679-ADE3FA39F5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A732E4BF-C604-462C-A679-ADE3FA39F5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A732E4BF-C604-462C-A679-ADE3FA39F5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A732E4BF-C604-462C-A679-ADE3FA39F5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {7DFBFA37-80A3-4614-BF2D-D5235EBFA860}
+		{E0BF15B6-2A3A-4EE9-8080-495678392100} = {7DFBFA37-80A3-4614-BF2D-D5235EBFA860}
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {7DFBFA37-80A3-4614-BF2D-D5235EBFA860}
+		{17EBED78-9469-4678-96B1-A175AB221916} = {7DFBFA37-80A3-4614-BF2D-D5235EBFA860}
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834} = {7DFBFA37-80A3-4614-BF2D-D5235EBFA860}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{52D0CDE2-C523-498F-8089-7AA857F1D399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.XmlHttpFileGet.Impl", "Atlantis.Framework.XmlHttpFileGet.Impl\Atlantis.Framework.XmlHttpFileGet.Impl.csproj", "{E070FE1A-C6CA-4A62-9C90-0BD973DE788D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.XmlHttpFileGet.Interface", "Atlantis.Framework.XmlHttpFileGet.Interface\Atlantis.Framework.XmlHttpFileGet.Interface.csproj", "{2D0A4E27-E6FF-4F71-9FF1-37852E81C37D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.XmlHttpFileGet.Test", "Atlantis.Framework.XmlHttpFileGet.Test\Atlantis.Framework.XmlHttpFileGet.Test.csproj", "{D331EE64-076C-4989-A169-0A09AB58EB51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DataCache", "..\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache.csproj", "{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Testing.MockHttpContext", "..\Atlantis.Framework.Testing\Atlantis.Framework.Testing.MockHttpContext\Atlantis.Framework.Testing.MockHttpContext.csproj", "{5B0E8D0F-247E-4937-8177-48EA5E267CAB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.XmlHttpFileGet.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.XmlHttpFileGet.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.XmlHttpFileGet.sln
+		SccProjectName2 = ../Atlantis.Framework.DataCache/Atlantis.Framework.DataCache
+		SccLocalPath2 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache
+		SccProjectUniqueName3 = ..\\Atlantis.Framework.Testing\\Atlantis.Framework.Testing.MockHttpContext\\Atlantis.Framework.Testing.MockHttpContext.csproj
+		SccProjectTopLevelParentUniqueName3 = Atlantis.Framework.XmlHttpFileGet.sln
+		SccProjectName3 = ../Atlantis.Framework.Testing/Atlantis.Framework.Testing.MockHttpContext
+		SccLocalPath3 = ..\\Atlantis.Framework.Testing\\Atlantis.Framework.Testing.MockHttpContext
+		SccLocalPath4 = .
+		SccProjectUniqueName5 = Atlantis.Framework.XmlHttpFileGet.Impl\\Atlantis.Framework.XmlHttpFileGet.Impl.csproj
+		SccProjectName5 = Atlantis.Framework.XmlHttpFileGet.Impl
+		SccLocalPath5 = Atlantis.Framework.XmlHttpFileGet.Impl
+		SccProjectUniqueName6 = Atlantis.Framework.XmlHttpFileGet.Interface\\Atlantis.Framework.XmlHttpFileGet.Interface.csproj
+		SccProjectName6 = Atlantis.Framework.XmlHttpFileGet.Interface
+		SccLocalPath6 = Atlantis.Framework.XmlHttpFileGet.Interface
+		SccProjectUniqueName7 = Atlantis.Framework.XmlHttpFileGet.Test\\Atlantis.Framework.XmlHttpFileGet.Test.csproj
+		SccProjectName7 = Atlantis.Framework.XmlHttpFileGet.Test
+		SccLocalPath7 = Atlantis.Framework.XmlHttpFileGet.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E070FE1A-C6CA-4A62-9C90-0BD973DE788D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E070FE1A-C6CA-4A62-9C90-0BD973DE788D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E070FE1A-C6CA-4A62-9C90-0BD973DE788D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E070FE1A-C6CA-4A62-9C90-0BD973DE788D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D0A4E27-E6FF-4F71-9FF1-37852E81C37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0A4E27-E6FF-4F71-9FF1-37852E81C37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0A4E27-E6FF-4F71-9FF1-37852E81C37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0A4E27-E6FF-4F71-9FF1-37852E81C37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D331EE64-076C-4989-A169-0A09AB58EB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D331EE64-076C-4989-A169-0A09AB58EB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D331EE64-076C-4989-A169-0A09AB58EB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D331EE64-076C-4989-A169-0A09AB58EB51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {52D0CDE2-C523-498F-8089-7AA857F1D399}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {52D0CDE2-C523-498F-8089-7AA857F1D399}
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834} = {52D0CDE2-C523-498F-8089-7AA857F1D399}
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB} = {52D0CDE2-C523-498F-8089-7AA857F1D399}
+	EndGlobalSection
+EndGlobal

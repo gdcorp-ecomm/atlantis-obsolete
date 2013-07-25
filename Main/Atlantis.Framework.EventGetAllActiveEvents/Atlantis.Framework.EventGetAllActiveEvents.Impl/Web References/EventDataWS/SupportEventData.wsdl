@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://eventservice.intranet.gdg/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://eventservice.intranet.gdg/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://eventservice.intranet.gdg/">
+      <s:element name="SearchEvents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchEventsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchEventsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllActiveEvents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllActiveEventsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllActiveEventsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServicesList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServicesListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServicesListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SearchEventsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchEvents" />
+  </wsdl:message>
+  <wsdl:message name="SearchEventsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllActiveEventsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllActiveEvents" />
+  </wsdl:message>
+  <wsdl:message name="GetAllActiveEventsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllActiveEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServicesListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServicesList" />
+  </wsdl:message>
+  <wsdl:message name="GetServicesListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServicesListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SupportEventDataSoap">
+    <wsdl:operation name="SearchEvents">
+      <wsdl:input message="tns:SearchEventsSoapIn" />
+      <wsdl:output message="tns:SearchEventsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllActiveEvents">
+      <wsdl:input message="tns:GetAllActiveEventsSoapIn" />
+      <wsdl:output message="tns:GetAllActiveEventsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServicesList">
+      <wsdl:input message="tns:GetServicesListSoapIn" />
+      <wsdl:output message="tns:GetServicesListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SupportEventDataSoap" type="tns:SupportEventDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SearchEvents">
+      <soap:operation soapAction="http://eventservice.intranet.gdg/SearchEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllActiveEvents">
+      <soap:operation soapAction="http://eventservice.intranet.gdg/GetAllActiveEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServicesList">
+      <soap:operation soapAction="http://eventservice.intranet.gdg/GetServicesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SupportEventDataSoap12" type="tns:SupportEventDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SearchEvents">
+      <soap12:operation soapAction="http://eventservice.intranet.gdg/SearchEvents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllActiveEvents">
+      <soap12:operation soapAction="http://eventservice.intranet.gdg/GetAllActiveEvents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServicesList">
+      <soap12:operation soapAction="http://eventservice.intranet.gdg/GetServicesList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SupportEventData">
+    <wsdl:port name="SupportEventDataSoap" binding="tns:SupportEventDataSoap">
+      <soap:address location="http://eventservice.dev.intranet.gdg/SupportEventData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SupportEventDataSoap12" binding="tns:SupportEventDataSoap12">
+      <soap12:address location="http://eventservice.dev.intranet.gdg/SupportEventData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

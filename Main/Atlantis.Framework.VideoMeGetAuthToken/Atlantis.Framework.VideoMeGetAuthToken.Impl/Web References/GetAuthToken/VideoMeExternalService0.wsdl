@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://www.video.me/externalService/1.0" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://www.video.me/externalService/1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.video.me/externalService/1.0/Imports">
+      <xsd:import schemaLocation="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd0" namespace="http://www.video.me/externalService/1.0" />
+      <xsd:import schemaLocation="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VideoMe.Web.Services" />
+      <xsd:import schemaLocation="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVideoMeExternalService_GetOneTimeAuthToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneTimeAuthToken" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetOneTimeAuthToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneTimeAuthTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetOneTimeAuthToken_VideoMeExternalExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/VideoMe.Web.Services" name="detail" element="q1:VideoMeExternalException" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoResult" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResult_VideoMeExternalExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/VideoMe.Web.Services" name="detail" element="q2:VideoMeExternalException" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoResults" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_GetVideoResults_VideoMeExternalExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/VideoMe.Web.Services" name="detail" element="q3:VideoMeExternalException" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_DeleteVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVideo" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_DeleteVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVideoMeExternalService_DeleteVideo_VideoMeExternalExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/VideoMe.Web.Services" name="detail" element="q4:VideoMeExternalException" />
+  </wsdl:message>
+  <wsdl:portType name="IVideoMeExternalService">
+    <wsdl:operation name="GetOneTimeAuthToken">
+      <wsdl:input wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetOneTimeAuthToken" message="tns:IVideoMeExternalService_GetOneTimeAuthToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetOneTimeAuthTokenResponse" message="tns:IVideoMeExternalService_GetOneTimeAuthToken_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetOneTimeAuthTokenVideoMeExternalExceptionFault" name="VideoMeExternalExceptionFault" message="tns:IVideoMeExternalService_GetOneTimeAuthToken_VideoMeExternalExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoResult">
+      <wsdl:input wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResult" message="tns:IVideoMeExternalService_GetVideoResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResultResponse" message="tns:IVideoMeExternalService_GetVideoResult_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResultVideoMeExternalExceptionFault" name="VideoMeExternalExceptionFault" message="tns:IVideoMeExternalService_GetVideoResult_VideoMeExternalExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoResults">
+      <wsdl:input wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResults" message="tns:IVideoMeExternalService_GetVideoResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResultsResponse" message="tns:IVideoMeExternalService_GetVideoResults_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/GetVideoResultsVideoMeExternalExceptionFault" name="VideoMeExternalExceptionFault" message="tns:IVideoMeExternalService_GetVideoResults_VideoMeExternalExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVideo">
+      <wsdl:input wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/DeleteVideo" message="tns:IVideoMeExternalService_DeleteVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/DeleteVideoResponse" message="tns:IVideoMeExternalService_DeleteVideo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.video.me/externalService/1.0/IVideoMeExternalService/DeleteVideoVideoMeExternalExceptionFault" name="VideoMeExternalExceptionFault" message="tns:IVideoMeExternalService_DeleteVideo_VideoMeExternalExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

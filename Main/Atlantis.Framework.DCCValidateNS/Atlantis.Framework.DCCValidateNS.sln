@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DCCValidateNS.Interface", "Atlantis.Framework.DCCValidateNS.Interface\Atlantis.Framework.DCCValidateNS.Interface.csproj", "{FA902DBF-A6C5-402F-B750-B17C18B258B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DCCValidateNS.Impl", "Atlantis.Framework.DCCValidateNS.Impl\Atlantis.Framework.DCCValidateNS.Impl.csproj", "{32E572E2-6501-45EE-BE91-AA3125059ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCCValidateNSTests", "DCCValidateNSTests\DCCValidateNSTests.csproj", "{86303345-E7BD-4BDB-B073-2F0818E20F21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A79977FB-1704-4D20-9C59-FD31D2DCAED3}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.DCCValidateNS.vsmdi = Atlantis.Framework.DCCValidateNS.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = Atlantis.Framework.DCCValidateNS.Impl\\Atlantis.Framework.DCCValidateNS.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.DCCValidateNS.Impl
+		SccLocalPath3 = Atlantis.Framework.DCCValidateNS.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.DCCValidateNS.Interface\\Atlantis.Framework.DCCValidateNS.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.DCCValidateNS.Interface
+		SccLocalPath4 = Atlantis.Framework.DCCValidateNS.Interface
+		SccProjectUniqueName5 = DCCValidateNSTests\\DCCValidateNSTests.csproj
+		SccProjectName5 = DCCValidateNSTests
+		SccLocalPath5 = DCCValidateNSTests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.DCCValidateNS.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA902DBF-A6C5-402F-B750-B17C18B258B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA902DBF-A6C5-402F-B750-B17C18B258B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA902DBF-A6C5-402F-B750-B17C18B258B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA902DBF-A6C5-402F-B750-B17C18B258B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E572E2-6501-45EE-BE91-AA3125059ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E572E2-6501-45EE-BE91-AA3125059ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E572E2-6501-45EE-BE91-AA3125059ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E572E2-6501-45EE-BE91-AA3125059ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86303345-E7BD-4BDB-B073-2F0818E20F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86303345-E7BD-4BDB-B073-2F0818E20F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86303345-E7BD-4BDB-B073-2F0818E20F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86303345-E7BD-4BDB-B073-2F0818E20F21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

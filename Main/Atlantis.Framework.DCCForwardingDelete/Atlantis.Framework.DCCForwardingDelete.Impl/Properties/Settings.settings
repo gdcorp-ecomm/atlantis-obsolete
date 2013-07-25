@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Atlantis.Framework.DCCForwardingDelete.Impl.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Atlantis_Framework_DCCForwardingDelete_Impl_RegDCCRequestService_RegDCCRequestWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://dccapp-general.dev.intranet.gdg/RegDCCRequestWS/RegDCCRequestWS.asmx</Value>
+    </Setting>
+    <Setting Name="Atlantis_Framework_DCCForwardingDelete_Impl_RegDCCVerifyService_RegDCCVerifyWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://dccapp-general.dev.intranet.gdg/RegDCCVerifyWS/RegDCCVerifyWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

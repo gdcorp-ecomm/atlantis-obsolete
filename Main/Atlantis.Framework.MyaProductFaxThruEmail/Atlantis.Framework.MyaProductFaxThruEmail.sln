@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA9CC6FC-749B-4238-B231-6F9B5ACA0268}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.MyaProductFaxThruEmail.vsmdi = Atlantis.Framework.MyaProductFaxThruEmail.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductFaxThruEmail.Impl", "Atlantis.Framework.MyaProductFaxThruEmail.Impl\Atlantis.Framework.MyaProductFaxThruEmail.Impl.csproj", "{736CBDCE-50D7-4868-A754-9ECC835929AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductFaxThruEmail.Interface", "Atlantis.Framework.MyaProductFaxThruEmail.Interface\Atlantis.Framework.MyaProductFaxThruEmail.Interface.csproj", "{0A0A8109-F085-464A-81C3-2B8C01D6383A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductFaxThruEmail.Tests", "Atlantis.Framework.MyaProductFaxThruEmail.Tests\Atlantis.Framework.MyaProductFaxThruEmail.Tests.csproj", "{DED04D09-C0BA-4546-A000-590AACE5C4FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProduct.Interface", "..\Atlantis.Framework.MyaProduct\Atlantis.Framework.MyaProduct.Interface\Atlantis.Framework.MyaProduct.Interface.csproj", "{E0BF15B6-2A3A-4EE9-8080-495678392100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ExternalReferences", "..\Atlantis.Framework.ExternalReferences\Atlantis.Framework.ExternalReferences.csproj", "{97FDB84B-02BD-4174-9942-812663DC1B0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C9528621-3C70-4063-8979-1CFF5FADCE36}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Atlantis.Framework.MyaProductFaxThruEmail.Impl\\Atlantis.Framework.MyaProductFaxThruEmail.Impl.csproj
+		SccProjectName1 = Atlantis.Framework.MyaProductFaxThruEmail.Impl
+		SccLocalPath1 = Atlantis.Framework.MyaProductFaxThruEmail.Impl
+		SccProjectUniqueName2 = Atlantis.Framework.MyaProductFaxThruEmail.Interface\\Atlantis.Framework.MyaProductFaxThruEmail.Interface.csproj
+		SccProjectName2 = Atlantis.Framework.MyaProductFaxThruEmail.Interface
+		SccLocalPath2 = Atlantis.Framework.MyaProductFaxThruEmail.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.MyaProductFaxThruEmail.Tests\\Atlantis.Framework.MyaProductFaxThruEmail.Tests.csproj
+		SccProjectName3 = Atlantis.Framework.MyaProductFaxThruEmail.Tests
+		SccLocalPath3 = Atlantis.Framework.MyaProductFaxThruEmail.Tests
+		SccProjectUniqueName4 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface\\Atlantis.Framework.MyaProduct.Interface.csproj
+		SccProjectTopLevelParentUniqueName4 = Atlantis.Framework.MyaProductFaxThruEmail.sln
+		SccProjectName4 = ../Atlantis.Framework.MyaProduct/Atlantis.Framework.MyaProduct.Interface
+		SccLocalPath4 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface
+		SccProjectUniqueName5 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName5 = Atlantis.Framework.MyaProductFaxThruEmail.sln
+		SccProjectName5 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath5 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName6 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName6 = Atlantis.Framework.MyaProductFaxThruEmail.sln
+		SccProjectName6 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath6 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName7 = ..\\Atlantis.Framework.ExternalReferences\\Atlantis.Framework.ExternalReferences.csproj
+		SccProjectTopLevelParentUniqueName7 = Atlantis.Framework.MyaProductFaxThruEmail.sln
+		SccProjectName7 = ../Atlantis.Framework.ExternalReferences
+		SccLocalPath7 = ..\\Atlantis.Framework.ExternalReferences
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.MyaProductFaxThruEmail.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{736CBDCE-50D7-4868-A754-9ECC835929AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736CBDCE-50D7-4868-A754-9ECC835929AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736CBDCE-50D7-4868-A754-9ECC835929AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736CBDCE-50D7-4868-A754-9ECC835929AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0A8109-F085-464A-81C3-2B8C01D6383A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0A8109-F085-464A-81C3-2B8C01D6383A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0A8109-F085-464A-81C3-2B8C01D6383A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0A8109-F085-464A-81C3-2B8C01D6383A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED04D09-C0BA-4546-A000-590AACE5C4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED04D09-C0BA-4546-A000-590AACE5C4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED04D09-C0BA-4546-A000-590AACE5C4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED04D09-C0BA-4546-A000-590AACE5C4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FDB84B-02BD-4174-9942-812663DC1B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FDB84B-02BD-4174-9942-812663DC1B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FDB84B-02BD-4174-9942-812663DC1B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FDB84B-02BD-4174-9942-812663DC1B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {C9528621-3C70-4063-8979-1CFF5FADCE36}
+		{97FDB84B-02BD-4174-9942-812663DC1B0B} = {C9528621-3C70-4063-8979-1CFF5FADCE36}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {C9528621-3C70-4063-8979-1CFF5FADCE36}
+		{E0BF15B6-2A3A-4EE9-8080-495678392100} = {C9528621-3C70-4063-8979-1CFF5FADCE36}
+	EndGlobalSection
+EndGlobal

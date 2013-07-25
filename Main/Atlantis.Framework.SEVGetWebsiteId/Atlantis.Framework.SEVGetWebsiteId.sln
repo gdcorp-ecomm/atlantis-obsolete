@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DAEF74FA-1D77-41B6-B4A2-886740ACC882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{29E7CCC1-0F54-45F9-8492-62145046C625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SEVGetWebsiteId.Impl", "Atlantis.Framework.SEVGetWebsiteId.Impl\Atlantis.Framework.SEVGetWebsiteId.Impl.csproj", "{6F33F76E-FEC9-4304-ADCA-04C075029C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SEVGetWebsiteId.Interface", "Atlantis.Framework.SEVGetWebsiteId.Interface\Atlantis.Framework.SEVGetWebsiteId.Interface.csproj", "{88DCF706-3929-4633-B1FC-CCC8EC3944CD}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "Atlantis.Framework.SEVGetWebsiteId.Tests", "Atlantis.Framework.SEVGetWebsiteId.Tests\Atlantis.Framework.SEVGetWebsiteId.Tests.csproj", "{8A4F854B-A76A-4821-8A05-6E6E1250D92A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.SEVGetWebsiteId.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.SEVGetWebsiteId.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.SEVGetWebsiteId.sln
+		SccProjectName2 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccLocalPath2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = Atlantis.Framework.SEVGetWebsiteId.Impl\\Atlantis.Framework.SEVGetWebsiteId.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.SEVGetWebsiteId.Impl
+		SccLocalPath4 = Atlantis.Framework.SEVGetWebsiteId.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.SEVGetWebsiteId.Interface\\Atlantis.Framework.SEVGetWebsiteId.Interface.csproj
+		SccProjectName5 = Atlantis.Framework.SEVGetWebsiteId.Interface
+		SccLocalPath5 = Atlantis.Framework.SEVGetWebsiteId.Interface
+		SccProjectUniqueName6 = Atlantis.Framework.SEVGetWebsiteId.Tests\\Atlantis.Framework.SEVGetWebsiteId.Tests.csproj
+		SccProjectName6 = Atlantis.Framework.SEVGetWebsiteId.Tests
+		SccLocalPath6 = Atlantis.Framework.SEVGetWebsiteId.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F33F76E-FEC9-4304-ADCA-04C075029C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F33F76E-FEC9-4304-ADCA-04C075029C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F33F76E-FEC9-4304-ADCA-04C075029C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F33F76E-FEC9-4304-ADCA-04C075029C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DCF706-3929-4633-B1FC-CCC8EC3944CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DCF706-3929-4633-B1FC-CCC8EC3944CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DCF706-3929-4633-B1FC-CCC8EC3944CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DCF706-3929-4633-B1FC-CCC8EC3944CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4F854B-A76A-4821-8A05-6E6E1250D92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4F854B-A76A-4821-8A05-6E6E1250D92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4F854B-A76A-4821-8A05-6E6E1250D92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4F854B-A76A-4821-8A05-6E6E1250D92A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {DAEF74FA-1D77-41B6-B4A2-886740ACC882}
+		{29E7CCC1-0F54-45F9-8492-62145046C625} = {DAEF74FA-1D77-41B6-B4A2-886740ACC882}
+		{17EBED78-9469-4678-96B1-A175AB221916} = {DAEF74FA-1D77-41B6-B4A2-886740ACC882}
+	EndGlobalSection
+EndGlobal

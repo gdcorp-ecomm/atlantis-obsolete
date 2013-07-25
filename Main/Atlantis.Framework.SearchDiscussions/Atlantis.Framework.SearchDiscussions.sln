@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{231D0CC3-6962-48DB-A3B8-26222D292C51}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.SearchDiscussions.vsmdi = Atlantis.Framework.SearchDiscussions.vsmdi
+		Atlantis.Framework.SearchDiscussions1.vsmdi = Atlantis.Framework.SearchDiscussions1.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SearchDiscussions.Interface", "Atlantis.Framework.SearchDiscussions.Interface\Atlantis.Framework.SearchDiscussions.Interface.csproj", "{CA29189F-5407-4932-88F6-BBAEE3888E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SearchDiscussions.Impl", "Atlantis.Framework.SearchDiscussions.Impl\Atlantis.Framework.SearchDiscussions.Impl.csproj", "{7672E8A1-DB52-44C4-98B7-DD4E7C8F899C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SearchDiscussions.Tests", "Atlantis.Framework.SearchDiscussions.Tests\Atlantis.Framework.SearchDiscussions.Tests.csproj", "{B9C2188E-BE42-4B0D-9900-8AAFDBB688AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DataCache", "..\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache.csproj", "{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{23642007-1958-44DB-B104-2170C0809899}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.SearchDiscussions.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.SearchDiscussions.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.SearchDiscussions.Interface\\Atlantis.Framework.SearchDiscussions.Interface.csproj
+		SccProjectName3 = Atlantis.Framework.SearchDiscussions.Interface
+		SccLocalPath3 = Atlantis.Framework.SearchDiscussions.Interface
+		SccProjectUniqueName4 = Atlantis.Framework.SearchDiscussions.Impl\\Atlantis.Framework.SearchDiscussions.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.SearchDiscussions.Impl
+		SccLocalPath4 = Atlantis.Framework.SearchDiscussions.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.SearchDiscussions.Tests\\Atlantis.Framework.SearchDiscussions.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.SearchDiscussions.Tests
+		SccLocalPath5 = Atlantis.Framework.SearchDiscussions.Tests
+		SccProjectUniqueName6 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache.csproj
+		SccProjectTopLevelParentUniqueName6 = Atlantis.Framework.SearchDiscussions.sln
+		SccProjectName6 = ../Atlantis.Framework.DataCache/Atlantis.Framework.DataCache
+		SccLocalPath6 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.SearchDiscussions1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA29189F-5407-4932-88F6-BBAEE3888E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA29189F-5407-4932-88F6-BBAEE3888E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA29189F-5407-4932-88F6-BBAEE3888E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA29189F-5407-4932-88F6-BBAEE3888E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7672E8A1-DB52-44C4-98B7-DD4E7C8F899C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7672E8A1-DB52-44C4-98B7-DD4E7C8F899C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7672E8A1-DB52-44C4-98B7-DD4E7C8F899C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7672E8A1-DB52-44C4-98B7-DD4E7C8F899C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C2188E-BE42-4B0D-9900-8AAFDBB688AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C2188E-BE42-4B0D-9900-8AAFDBB688AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C2188E-BE42-4B0D-9900-8AAFDBB688AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C2188E-BE42-4B0D-9900-8AAFDBB688AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {23642007-1958-44DB-B104-2170C0809899}
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {23642007-1958-44DB-B104-2170C0809899}
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834} = {23642007-1958-44DB-B104-2170C0809899}
+	EndGlobalSection
+EndGlobal

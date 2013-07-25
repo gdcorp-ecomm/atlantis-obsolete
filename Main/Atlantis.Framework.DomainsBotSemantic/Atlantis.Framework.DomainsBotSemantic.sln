@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CB2E63E4-065B-428B-B873-BE806842543F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DomainsBotSemantic.Interface", "Atlantis.Framework.DomainsBotSemantic.Interface\Atlantis.Framework.DomainsBotSemantic.Interface.csproj", "{3BACC8FE-0540-417F-B3BD-28D338607E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DomainsBotSemantic.Impl", "Atlantis.Framework.DomainsBotSemantic.Impl\Atlantis.Framework.DomainsBotSemantic.Impl.csproj", "{73979747-03D8-4515-B9EB-B9104C29A41F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.DomainsBotSemantic.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = Atlantis.Framework.DomainsBotSemantic.Interface\\Atlantis.Framework.DomainsBotSemantic.Interface.csproj
+		SccProjectName2 = Atlantis.Framework.DomainsBotSemantic.Interface
+		SccLocalPath2 = Atlantis.Framework.DomainsBotSemantic.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.DomainsBotSemantic.Impl\\Atlantis.Framework.DomainsBotSemantic.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.DomainsBotSemantic.Impl
+		SccLocalPath3 = Atlantis.Framework.DomainsBotSemantic.Impl
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BACC8FE-0540-417F-B3BD-28D338607E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BACC8FE-0540-417F-B3BD-28D338607E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BACC8FE-0540-417F-B3BD-28D338607E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BACC8FE-0540-417F-B3BD-28D338607E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73979747-03D8-4515-B9EB-B9104C29A41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73979747-03D8-4515-B9EB-B9104C29A41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73979747-03D8-4515-B9EB-B9104C29A41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73979747-03D8-4515-B9EB-B9104C29A41F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {CB2E63E4-065B-428B-B873-BE806842543F}
+	EndGlobalSection
+EndGlobal

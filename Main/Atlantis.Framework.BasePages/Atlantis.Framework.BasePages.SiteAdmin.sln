@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.DataCache", "..\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache\Atlantis.Framework.DataCache.csproj", "{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SiteAdminRoles.Interface", "..\Atlantis.Framework.SiteAdminRoles\Atlantis.Framework.SiteAdminRoles.Interface\Atlantis.Framework.SiteAdminRoles.Interface.csproj", "{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SiteAdminRoles.Impl", "..\Atlantis.Framework.SiteAdminRoles\Atlantis.Framework.SiteAdminRoles.Impl\Atlantis.Framework.SiteAdminRoles.Impl.csproj", "{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.BasePages.SiteAdmin", "Atlantis.Framework.BasePages.SiteAdmin\Atlantis.Framework.BasePages.SiteAdmin.csproj", "{B23DE506-143A-4709-84FE-8097EB5E4007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Atlantis.Framework.BasePages.SiteAdminTestWeb", "Atlantis.Framework.BasePages.SiteAdminTestWeb", "{7E261323-57C2-4264-A87A-0D180F326209}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{B23DE506-143A-4709-84FE-8097EB5E4007}|Atlantis.Framework.BasePages.SiteAdmin.dll;{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}|Atlantis.Framework.DataCache.dll;{092618E1-1F37-422C-82AF-17A1337B8986}|Atlantis.Framework.Engine.dll;{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}|Atlantis.Framework.Interface.dll;{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}|Atlantis.Framework.SiteAdminRoles.Interface.dll;{CDB8B44E-47FC-4F39-96EF-207EB67772FF}|Atlantis.Framework.Providers.Interface.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Atlantis.Framework.BasePages.SiteAdminTestWeb"
+		Debug.AspNetCompiler.PhysicalPath = "Atlantis.Framework.BasePages.SiteAdminTestWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Atlantis.Framework.BasePages.SiteAdminTestWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Atlantis.Framework.BasePages.SiteAdminTestWeb"
+		Release.AspNetCompiler.PhysicalPath = "Atlantis.Framework.BasePages.SiteAdminTestWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Atlantis.Framework.BasePages.SiteAdminTestWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "24058"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Providers.Interface", "..\Atlantis.Framework.Providers.Interface\Atlantis.Framework.Providers.Interface\Atlantis.Framework.Providers.Interface.csproj", "{CDB8B44E-47FC-4F39-96EF-207EB67772FF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName3 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache.csproj
+		SccProjectTopLevelParentUniqueName3 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName3 = ../Atlantis.Framework.DataCache/Atlantis.Framework.DataCache
+		SccLocalPath3 = ..\\Atlantis.Framework.DataCache\\Atlantis.Framework.DataCache
+		SccProjectUniqueName4 = ..\\Atlantis.Framework.SiteAdminRoles\\Atlantis.Framework.SiteAdminRoles.Interface\\Atlantis.Framework.SiteAdminRoles.Interface.csproj
+		SccProjectTopLevelParentUniqueName4 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName4 = ../Atlantis.Framework.SiteAdminRoles/Atlantis.Framework.SiteAdminRoles.Interface
+		SccLocalPath4 = ..\\Atlantis.Framework.SiteAdminRoles\\Atlantis.Framework.SiteAdminRoles.Interface
+		SccProjectUniqueName5 = ..\\Atlantis.Framework.SiteAdminRoles\\Atlantis.Framework.SiteAdminRoles.Impl\\Atlantis.Framework.SiteAdminRoles.Impl.csproj
+		SccProjectTopLevelParentUniqueName5 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName5 = ../Atlantis.Framework.SiteAdminRoles/Atlantis.Framework.SiteAdminRoles.Impl
+		SccLocalPath5 = ..\\Atlantis.Framework.SiteAdminRoles\\Atlantis.Framework.SiteAdminRoles.Impl
+		SccProjectUniqueName6 = Atlantis.Framework.BasePages.SiteAdmin\\Atlantis.Framework.BasePages.SiteAdmin.csproj
+		SccProjectName6 = Atlantis.Framework.BasePages.SiteAdmin
+		SccLocalPath6 = Atlantis.Framework.BasePages.SiteAdmin
+		SccProjectUniqueName7 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectTopLevelParentUniqueName7 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName7 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccLocalPath7 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccWebProject8 = true
+		SccProjectUniqueName8 = Atlantis.Framework.BasePages.SiteAdminTestWeb
+		SccProjectName8 = Atlantis.Framework.BasePages.SiteAdminTestWeb
+		SccLocalPath8 = Atlantis.Framework.BasePages.SiteAdminTestWeb
+		SccProjectEnlistmentChoice8 = 2
+		SccProjectUniqueName9 = ..\\Atlantis.Framework.Providers.Interface\\Atlantis.Framework.Providers.Interface\\Atlantis.Framework.Providers.Interface.csproj
+		SccProjectTopLevelParentUniqueName9 = Atlantis.Framework.BasePages.SiteAdmin.sln
+		SccProjectName9 = ../Atlantis.Framework.Providers.Interface/Atlantis.Framework.Providers.Interface
+		SccLocalPath9 = ..\\Atlantis.Framework.Providers.Interface\\Atlantis.Framework.Providers.Interface
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DBED5E-F245-4C21-BD0F-820896A1A6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23DE506-143A-4709-84FE-8097EB5E4007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23DE506-143A-4709-84FE-8097EB5E4007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23DE506-143A-4709-84FE-8097EB5E4007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23DE506-143A-4709-84FE-8097EB5E4007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E261323-57C2-4264-A87A-0D180F326209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E261323-57C2-4264-A87A-0D180F326209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E261323-57C2-4264-A87A-0D180F326209}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E261323-57C2-4264-A87A-0D180F326209}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CDB8B44E-47FC-4F39-96EF-207EB67772FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB8B44E-47FC-4F39-96EF-207EB67772FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB8B44E-47FC-4F39-96EF-207EB67772FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB8B44E-47FC-4F39-96EF-207EB67772FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{8E4322D7-C6B3-4EE1-9FAD-7B848B38C834} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{E1DBED5E-F245-4C21-BD0F-820896A1A6E3} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{8AFE3770-A5C9-4375-93C2-90E9E29DD0C5} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{17EBED78-9469-4678-96B1-A175AB221916} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+		{CDB8B44E-47FC-4F39-96EF-207EB67772FF} = {9C96BF68-3BF5-41A5-8FC9-0C35B978D47C}
+	EndGlobalSection
+EndGlobal

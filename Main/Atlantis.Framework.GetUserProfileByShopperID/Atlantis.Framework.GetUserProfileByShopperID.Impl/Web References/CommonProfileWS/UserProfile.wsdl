@@ -1,0 +1,2329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://commonprofilesystem.starfieldtech.com.gdg" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://commonprofilesystem.starfieldtech.com.gdg" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://commonprofilesystem.starfieldtech.com.gdg">
+      <s:element name="GetVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileWithApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationReferenceId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationUserId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="realName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationTypeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="externalApplicationId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileWithApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileWithApplicationResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileForForum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileForForumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileForForumResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserProfileToApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationUserId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationForumId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserProfileToApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserProfileToApplicationResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ws" type="tns:WsUserProfileApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsUserProfileApplication">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="UserProfileApplicationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="UserProfileId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="ApplicationUserId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="ExternalApplicationReferenceId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewUserProfileApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddNewUserProfileApplicationResult" type="tns:WsUserProfileApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileToUserApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationTypeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationUserId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileToUserApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileToUserApplicationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsUserProfile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UserProfileId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsMember" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShopperId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserAccountStatusId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RealName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EmailAddressIsPublic" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Occupation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebSite" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Avatar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AvatarUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Signature" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FilerPrefix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewUserProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileApp" type="tns:WsUserProfileApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserProfileApplicationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserProfileApplicationShopperId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserProfileApplicationShopperIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserProfileApplicationShopperIdResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserToForum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cpsUserProfile" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserToForumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddUserToForumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileApplicationForForum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumUserId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileApplicationForForumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileApplicationForForumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileApplicationReputation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="appId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="appTypeId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile" type="tns:WsUserProfile" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileApplicationReputationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserProfileApplicationReputationResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileApplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="appTypeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="externalAppId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileApplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileApplicationResult" type="tns:WsUserProfileApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileByIdResult" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileByUserNameResult" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByShopperId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByShopperIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileByShopperIdResult" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByApplicationUserId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationTypeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="externalApplicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationUserId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileByApplicationUserIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileByApplicationUserIdResult" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfilesByForumId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfilesByForumIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfilesByForumIdResult" type="tns:ArrayOfWsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWsUserProfile">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WsUserProfile" nillable="true" type="tns:WsUserProfile" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserEMailAddresses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfWsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserEMailAddressesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserEMailAddressesResult" type="tns:ArrayOfWsUserProfileEMail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWsUserProfileEMail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WsUserProfileEMail" nillable="true" type="tns:WsUserProfileEMail" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WsUserProfileEMail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="UserProfileId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" default="" name="EMailAddress" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserProfilesById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileIds" type="tns:ArrayOfLong" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfLong">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="long" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserProfilesByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfilesByIdResult" type="tns:ArrayOfWsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileViewByShopperId_ApplicationForumId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileViewByShopperId_ApplicationForumIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileViewByShopperId_ApplicationForumIdResult" type="tns:WsUserProfileView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsUserProfileView">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:WsUserProfile">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="UserProfileApplicationId" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ApplicationUserId" type="s:long" />
+              <s:element minOccurs="1" maxOccurs="1" name="ApplicationTypeId" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ExternalApplicationId" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ApplicationDescription" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ApplicationId" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="UpdateUserProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserProfileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserProfileAvatar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="image" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserProfileAvatarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserProfileAvatarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetupUserProfileForumReputation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetupUserProfileForumReputationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetupUserProfileForumReputationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfiles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfWsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfilesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserProfilesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfile" type="tns:WsUserProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserEmailAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationUserId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="emailAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserEmailAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserEmailAddressResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserEmailAddressIsPublic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserEmailAddressIsPublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserEmailAddressIsPublicResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserProfileUserNameUnique">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserProfileUserNameUniqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserProfileUserNameUniqueResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserProfileByUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserProfileByUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserProfileByUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUserAccountStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsUserAccountStatus" type="tns:WsUserAccountStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsUserAccountStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" default="0" name="UserAccountStatusId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" default="" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddUserAccountStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUserAccountStatusResult" type="tns:WsUserAccountStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserAccountStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userAccountStatus" type="tns:WsUserAccountStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserAccountStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateUserAccountStatusResult" type="tns:WsUserAccountStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationByForumId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationByForumIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationByForumIdResult" type="tns:WsApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsApplication">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ApplicationReferenceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplicationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CPSEnabled" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetApplicationByDomain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationByDomainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationByDomainResult" type="tns:WsApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationByApplicationId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="appId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationByApplicationIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationByApplicationIdResult" type="tns:WsApplication" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationUserProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationTypeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationUserProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationUserProfileResult" type="tns:WsApplicationUserProfileView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsApplicationUserProfileView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="UserProfileApplicationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="ApplicationUserId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="UserProfileId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="ExternalApplicationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" default="-1" name="ApplicationId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetApplicationUserProfileByShopperId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="externalApplicationId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopperId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplicationUserProfileByShopperIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationUserProfileByShopperIdResult" type="tns:WsApplicationUserProfileView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvatarPathByForumId_ForumUserId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="forumId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="forumUserId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvatarPathByForumId_ForumUserIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvatarPathByForumId_ForumUserIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewVirtualAddressType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="virtualAddressType" type="tns:WsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsVirtualAddressType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="VirtualAddressTypeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewVirtualAddressTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddNewVirtualAddressTypeResult" type="tns:WsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllVirtualAddressTypeById">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllVirtualAddressTypeByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllVirtualAddressTypeByIdResult" type="tns:ArrayOfWsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWsVirtualAddressType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WsVirtualAddressType" nillable="true" type="tns:WsVirtualAddressType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetVirtualAddressTypeById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVirtualAddressTypeByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVirtualAddressTypeByIdResult" type="tns:WsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVirtualAddressType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="virtualAddressType" type="tns:WsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVirtualAddressTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateVirtualAddressTypeResult" type="tns:WsVirtualAddressType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserProfileVirtualAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileVirtualAddress" type="tns:WsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsUserProfileVirtualAddress">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UserProfileVirtualAddressId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserProfileId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="VirtualAddressTypeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VirtualAddress" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewUserProfileVirtualAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddNewUserProfileVirtualAddressResult" type="tns:WsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddListNewUserProfileVirtualAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileVirtualAddresses" type="tns:ArrayOfWsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWsUserProfileVirtualAddress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WsUserProfileVirtualAddress" nillable="true" type="tns:WsUserProfileVirtualAddress" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddListNewUserProfileVirtualAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddListNewUserProfileVirtualAddressResult" type="tns:ArrayOfWsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileVirtualAddressById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileVirtualAddressByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileVirtualAddressByIdResult" type="tns:WsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileVirtualAddressByUserProfileId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="userProfileId" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserProfileVirtualAddressByUserProfileIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserProfileVirtualAddressByUserProfileIdResult" type="tns:ArrayOfWsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileVirtualAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileVirtualAddress" type="tns:WsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileVirtualAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateUserProfileVirtualAddressResult" type="tns:WsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileVirtualAddresses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userProfileVirtualAddresses" type="tns:ArrayOfWsUserProfileVirtualAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateUserProfileVirtualAddressesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateUserProfileVirtualAddressesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExternalApplicationReferenceByTypeId_AppId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="typeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="applicationId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExternalApplicationReferenceByTypeId_AppIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExternalApplicationReferenceByTypeId_AppIdResult" type="tns:WsExternalApplicationReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WsExternalApplicationReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ExternalApplicationReferenceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplicationTypeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExternalApplicationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplicationReferenceId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="IsUserProfilePublicMemberPublic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="appId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="att" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsUserProfilePublicMemberPublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsUserProfilePublicMemberPublicResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserProfilePublicMember">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="appId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="att" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="val" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserProfilePublicMemberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserProfilePublicMemberResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileWithApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileWithApplication" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileWithApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileWithApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileForForumSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileForForum" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileForForumSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileForForumResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserProfileToApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserProfileToApplication" />
+  </wsdl:message>
+  <wsdl:message name="AddUserProfileToApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserProfileToApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplication" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileToUserApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileToUserApplication" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileToUserApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileToUserApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileApplication" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserProfileApplicationShopperIdSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserProfileApplicationShopperId" />
+  </wsdl:message>
+  <wsdl:message name="AddUserProfileApplicationShopperIdSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserProfileApplicationShopperIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserToForumSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserToForum" />
+  </wsdl:message>
+  <wsdl:message name="AddUserToForumSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserToForumResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationForForumSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplicationForForum" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationForForumSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplicationForForumResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationReputationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplicationReputation" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileApplicationReputationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileApplicationReputationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileApplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileApplication" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileApplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileById" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByUserName" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByShopperIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByShopperId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByShopperIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByShopperIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByApplicationUserIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByApplicationUserId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileByApplicationUserIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileByApplicationUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfilesByForumIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfilesByForumId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfilesByForumIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfilesByForumIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserEMailAddressesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserEMailAddresses" />
+  </wsdl:message>
+  <wsdl:message name="GetUserEMailAddressesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserEMailAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfilesByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfilesById" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfilesByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfilesByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileViewByShopperId_ApplicationForumIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileViewByShopperId_ApplicationForumId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileViewByShopperId_ApplicationForumIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileViewByShopperId_ApplicationForumIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserProfileAvatarSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserProfileAvatar" />
+  </wsdl:message>
+  <wsdl:message name="SetUserProfileAvatarSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserProfileAvatarResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetupUserProfileForumReputationSoapIn">
+    <wsdl:part name="parameters" element="tns:SetupUserProfileForumReputation" />
+  </wsdl:message>
+  <wsdl:message name="SetupUserProfileForumReputationSoapOut">
+    <wsdl:part name="parameters" element="tns:SetupUserProfileForumReputationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfilesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfiles" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfilesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserEmailAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserEmailAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserEmailAddressIsPublicSoapIn">
+    <wsdl:part name="parameters" element="tns:UserEmailAddressIsPublic" />
+  </wsdl:message>
+  <wsdl:message name="UserEmailAddressIsPublicSoapOut">
+    <wsdl:part name="parameters" element="tns:UserEmailAddressIsPublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfileUserNameUniqueSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserProfileUserNameUnique" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfileUserNameUniqueSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserProfileUserNameUniqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfileByUserSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserProfileByUser" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfileByUserSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserProfileByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUserAccountStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUserAccountStatus" />
+  </wsdl:message>
+  <wsdl:message name="AddUserAccountStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUserAccountStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserAccountStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserAccountStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserAccountStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserAccountStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByForumIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationByForumId" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByForumIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationByForumIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByDomainSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationByDomain" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByDomainSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationByDomainResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByApplicationIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationByApplicationId" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationByApplicationIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationByApplicationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationUserProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationUserProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationUserProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationUserProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationUserProfileByShopperIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationUserProfileByShopperId" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationUserProfileByShopperIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationUserProfileByShopperIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvatarPathByForumId_ForumUserIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvatarPathByForumId_ForumUserId" />
+  </wsdl:message>
+  <wsdl:message name="GetAvatarPathByForumId_ForumUserIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvatarPathByForumId_ForumUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewVirtualAddressTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewVirtualAddressType" />
+  </wsdl:message>
+  <wsdl:message name="AddNewVirtualAddressTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewVirtualAddressTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllVirtualAddressTypeByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllVirtualAddressTypeById" />
+  </wsdl:message>
+  <wsdl:message name="GetAllVirtualAddressTypeByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllVirtualAddressTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVirtualAddressTypeByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVirtualAddressTypeById" />
+  </wsdl:message>
+  <wsdl:message name="GetVirtualAddressTypeByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVirtualAddressTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVirtualAddressTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVirtualAddressType" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVirtualAddressTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVirtualAddressTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileVirtualAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileVirtualAddress" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserProfileVirtualAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserProfileVirtualAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddListNewUserProfileVirtualAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:AddListNewUserProfileVirtualAddress" />
+  </wsdl:message>
+  <wsdl:message name="AddListNewUserProfileVirtualAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:AddListNewUserProfileVirtualAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileVirtualAddressByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileVirtualAddressById" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileVirtualAddressByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileVirtualAddressByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileVirtualAddressByUserProfileIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserProfileVirtualAddressByUserProfileId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserProfileVirtualAddressByUserProfileIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserProfileVirtualAddressByUserProfileIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileVirtualAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileVirtualAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileVirtualAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileVirtualAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileVirtualAddressesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileVirtualAddresses" />
+  </wsdl:message>
+  <wsdl:message name="UpdateUserProfileVirtualAddressesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateUserProfileVirtualAddressesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExternalApplicationReferenceByTypeId_AppIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExternalApplicationReferenceByTypeId_AppId" />
+  </wsdl:message>
+  <wsdl:message name="GetExternalApplicationReferenceByTypeId_AppIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExternalApplicationReferenceByTypeId_AppIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfilePublicMemberPublicSoapIn">
+    <wsdl:part name="parameters" element="tns:IsUserProfilePublicMemberPublic" />
+  </wsdl:message>
+  <wsdl:message name="IsUserProfilePublicMemberPublicSoapOut">
+    <wsdl:part name="parameters" element="tns:IsUserProfilePublicMemberPublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserProfilePublicMemberSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserProfilePublicMember" />
+  </wsdl:message>
+  <wsdl:message name="SetUserProfilePublicMemberSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserProfilePublicMemberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserProfileSoap">
+    <wsdl:operation name="GetVersion">
+      <wsdl:input message="tns:GetVersionSoapIn" />
+      <wsdl:output message="tns:GetVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileWithApplication">
+      <wsdl:input message="tns:AddNewUserProfileWithApplicationSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileWithApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileForForum">
+      <wsdl:input message="tns:AddNewUserProfileForForumSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileForForumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileToApplication">
+      <wsdl:input message="tns:AddUserProfileToApplicationSoapIn" />
+      <wsdl:output message="tns:AddUserProfileToApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplication">
+      <wsdl:input message="tns:AddNewUserProfileApplicationSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileToUserApplication">
+      <wsdl:input message="tns:AddNewUserProfileToUserApplicationSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileToUserApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfile">
+      <wsdl:input message="tns:AddNewUserProfileSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileApplication">
+      <wsdl:input message="tns:UpdateUserProfileApplicationSoapIn" />
+      <wsdl:output message="tns:UpdateUserProfileApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileApplicationShopperId">
+      <wsdl:input message="tns:AddUserProfileApplicationShopperIdSoapIn" />
+      <wsdl:output message="tns:AddUserProfileApplicationShopperIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserToForum">
+      <wsdl:input message="tns:AddUserToForumSoapIn" />
+      <wsdl:output message="tns:AddUserToForumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationForForum">
+      <wsdl:input message="tns:AddNewUserProfileApplicationForForumSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileApplicationForForumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationReputation">
+      <wsdl:input message="tns:AddNewUserProfileApplicationReputationSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileApplicationReputationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileApplication">
+      <wsdl:input message="tns:GetUserProfileApplicationSoapIn" />
+      <wsdl:output message="tns:GetUserProfileApplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileById">
+      <wsdl:input message="tns:GetUserProfileByIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByUserName">
+      <wsdl:input message="tns:GetUserProfileByUserNameSoapIn" />
+      <wsdl:output message="tns:GetUserProfileByUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByShopperId">
+      <wsdl:input message="tns:GetUserProfileByShopperIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileByShopperIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByApplicationUserId">
+      <wsdl:input message="tns:GetUserProfileByApplicationUserIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileByApplicationUserIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesByForumId">
+      <wsdl:input message="tns:GetUserProfilesByForumIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfilesByForumIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserEMailAddresses">
+      <wsdl:input message="tns:GetUserEMailAddressesSoapIn" />
+      <wsdl:output message="tns:GetUserEMailAddressesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesById">
+      <wsdl:input message="tns:GetUserProfilesByIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfilesByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileViewByShopperId_ApplicationForumId">
+      <wsdl:input message="tns:GetUserProfileViewByShopperId_ApplicationForumIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileViewByShopperId_ApplicationForumIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfile">
+      <wsdl:input message="tns:UpdateUserProfileSoapIn" />
+      <wsdl:output message="tns:UpdateUserProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfileAvatar">
+      <wsdl:input message="tns:SetUserProfileAvatarSoapIn" />
+      <wsdl:output message="tns:SetUserProfileAvatarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupUserProfileForumReputation">
+      <wsdl:input message="tns:SetupUserProfileForumReputationSoapIn" />
+      <wsdl:output message="tns:SetupUserProfileForumReputationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfiles">
+      <wsdl:input message="tns:UpdateUserProfilesSoapIn" />
+      <wsdl:output message="tns:UpdateUserProfilesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <wsdl:input message="tns:UpdateUserInfoSoapIn" />
+      <wsdl:output message="tns:UpdateUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserEmailAddress">
+      <wsdl:input message="tns:UpdateUserEmailAddressSoapIn" />
+      <wsdl:output message="tns:UpdateUserEmailAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UserEmailAddressIsPublic">
+      <wsdl:input message="tns:UserEmailAddressIsPublicSoapIn" />
+      <wsdl:output message="tns:UserEmailAddressIsPublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileUserNameUnique">
+      <wsdl:input message="tns:IsUserProfileUserNameUniqueSoapIn" />
+      <wsdl:output message="tns:IsUserProfileUserNameUniqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileByUser">
+      <wsdl:input message="tns:IsUserProfileByUserSoapIn" />
+      <wsdl:output message="tns:IsUserProfileByUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserAccountStatus">
+      <wsdl:input message="tns:AddUserAccountStatusSoapIn" />
+      <wsdl:output message="tns:AddUserAccountStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAccountStatus">
+      <wsdl:input message="tns:UpdateUserAccountStatusSoapIn" />
+      <wsdl:output message="tns:UpdateUserAccountStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByForumId">
+      <wsdl:input message="tns:GetApplicationByForumIdSoapIn" />
+      <wsdl:output message="tns:GetApplicationByForumIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByDomain">
+      <wsdl:input message="tns:GetApplicationByDomainSoapIn" />
+      <wsdl:output message="tns:GetApplicationByDomainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByApplicationId">
+      <wsdl:input message="tns:GetApplicationByApplicationIdSoapIn" />
+      <wsdl:output message="tns:GetApplicationByApplicationIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfile">
+      <wsdl:input message="tns:GetApplicationUserProfileSoapIn" />
+      <wsdl:output message="tns:GetApplicationUserProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfileByShopperId">
+      <wsdl:input message="tns:GetApplicationUserProfileByShopperIdSoapIn" />
+      <wsdl:output message="tns:GetApplicationUserProfileByShopperIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvatarPathByForumId_ForumUserId">
+      <wsdl:input message="tns:GetAvatarPathByForumId_ForumUserIdSoapIn" />
+      <wsdl:output message="tns:GetAvatarPathByForumId_ForumUserIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewVirtualAddressType">
+      <wsdl:input message="tns:AddNewVirtualAddressTypeSoapIn" />
+      <wsdl:output message="tns:AddNewVirtualAddressTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVirtualAddressTypeById">
+      <wsdl:input message="tns:GetAllVirtualAddressTypeByIdSoapIn" />
+      <wsdl:output message="tns:GetAllVirtualAddressTypeByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVirtualAddressTypeById">
+      <wsdl:input message="tns:GetVirtualAddressTypeByIdSoapIn" />
+      <wsdl:output message="tns:GetVirtualAddressTypeByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVirtualAddressType">
+      <wsdl:input message="tns:UpdateVirtualAddressTypeSoapIn" />
+      <wsdl:output message="tns:UpdateVirtualAddressTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileVirtualAddress">
+      <wsdl:input message="tns:AddNewUserProfileVirtualAddressSoapIn" />
+      <wsdl:output message="tns:AddNewUserProfileVirtualAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddListNewUserProfileVirtualAddress">
+      <wsdl:input message="tns:AddListNewUserProfileVirtualAddressSoapIn" />
+      <wsdl:output message="tns:AddListNewUserProfileVirtualAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressById">
+      <wsdl:input message="tns:GetUserProfileVirtualAddressByIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileVirtualAddressByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressByUserProfileId">
+      <wsdl:input message="tns:GetUserProfileVirtualAddressByUserProfileIdSoapIn" />
+      <wsdl:output message="tns:GetUserProfileVirtualAddressByUserProfileIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddress">
+      <wsdl:input message="tns:UpdateUserProfileVirtualAddressSoapIn" />
+      <wsdl:output message="tns:UpdateUserProfileVirtualAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddresses">
+      <wsdl:input message="tns:UpdateUserProfileVirtualAddressesSoapIn" />
+      <wsdl:output message="tns:UpdateUserProfileVirtualAddressesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalApplicationReferenceByTypeId_AppId">
+      <wsdl:input message="tns:GetExternalApplicationReferenceByTypeId_AppIdSoapIn" />
+      <wsdl:output message="tns:GetExternalApplicationReferenceByTypeId_AppIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfilePublicMemberPublic">
+      <wsdl:input message="tns:IsUserProfilePublicMemberPublicSoapIn" />
+      <wsdl:output message="tns:IsUserProfilePublicMemberPublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfilePublicMember">
+      <wsdl:input message="tns:SetUserProfilePublicMemberSoapIn" />
+      <wsdl:output message="tns:SetUserProfilePublicMemberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserProfileSoap" type="tns:UserProfileSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileWithApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileWithApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileForForum">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileForForum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileToApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserProfileToApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileToUserApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileToUserApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfile">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileApplicationShopperId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserProfileApplicationShopperId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserToForum">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserToForum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationForForum">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplicationForForum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationReputation">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplicationReputation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileApplication">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileById">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByUserName">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByShopperId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByShopperId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByApplicationUserId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByApplicationUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesByForumId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfilesByForumId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserEMailAddresses">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserEMailAddresses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesById">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfilesById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileViewByShopperId_ApplicationForumId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileViewByShopperId_ApplicationForumId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfile">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfileAvatar">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetUserProfileAvatar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupUserProfileForumReputation">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetupUserProfileForumReputation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfiles">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserEmailAddress">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserEmailAddressIsPublic">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UserEmailAddressIsPublic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileUserNameUnique">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfileUserNameUnique" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileByUser">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfileByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserAccountStatus">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserAccountStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAccountStatus">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserAccountStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByForumId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByForumId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByDomain">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByDomain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByApplicationId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByApplicationId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfile">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfileByShopperId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationUserProfileByShopperId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvatarPathByForumId_ForumUserId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetAvatarPathByForumId_ForumUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewVirtualAddressType">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewVirtualAddressType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVirtualAddressTypeById">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetAllVirtualAddressTypeById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVirtualAddressTypeById">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetVirtualAddressTypeById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVirtualAddressType">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateVirtualAddressType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileVirtualAddress">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddListNewUserProfileVirtualAddress">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddListNewUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressById">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileVirtualAddressById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressByUserProfileId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileVirtualAddressByUserProfileId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddress">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddresses">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileVirtualAddresses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalApplicationReferenceByTypeId_AppId">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetExternalApplicationReferenceByTypeId_AppId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfilePublicMemberPublic">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfilePublicMemberPublic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfilePublicMember">
+      <soap:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetUserProfilePublicMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserProfileSoap12" type="tns:UserProfileSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetVersion">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileWithApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileWithApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileForForum">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileForForum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileToApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserProfileToApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileToUserApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileToUserApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfile">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserProfileApplicationShopperId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserProfileApplicationShopperId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserToForum">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserToForum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationForForum">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplicationForForum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileApplicationReputation">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileApplicationReputation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileApplication">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileApplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileById">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByUserName">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByShopperId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByShopperId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileByApplicationUserId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileByApplicationUserId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesByForumId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfilesByForumId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserEMailAddresses">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserEMailAddresses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfilesById">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfilesById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileViewByShopperId_ApplicationForumId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileViewByShopperId_ApplicationForumId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfile">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfileAvatar">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetUserProfileAvatar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupUserProfileForumReputation">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetupUserProfileForumReputation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfiles">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfiles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserInfo">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserEmailAddress">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserEmailAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserEmailAddressIsPublic">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UserEmailAddressIsPublic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileUserNameUnique">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfileUserNameUnique" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfileByUser">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfileByUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserAccountStatus">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddUserAccountStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserAccountStatus">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserAccountStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByForumId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByForumId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByDomain">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByDomain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationByApplicationId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationByApplicationId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfile">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationUserProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationUserProfileByShopperId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetApplicationUserProfileByShopperId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvatarPathByForumId_ForumUserId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetAvatarPathByForumId_ForumUserId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewVirtualAddressType">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewVirtualAddressType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVirtualAddressTypeById">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetAllVirtualAddressTypeById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVirtualAddressTypeById">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetVirtualAddressTypeById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVirtualAddressType">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateVirtualAddressType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUserProfileVirtualAddress">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddNewUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddListNewUserProfileVirtualAddress">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/AddListNewUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressById">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileVirtualAddressById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserProfileVirtualAddressByUserProfileId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetUserProfileVirtualAddressByUserProfileId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddress">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileVirtualAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserProfileVirtualAddresses">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/UpdateUserProfileVirtualAddresses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExternalApplicationReferenceByTypeId_AppId">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/GetExternalApplicationReferenceByTypeId_AppId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserProfilePublicMemberPublic">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/IsUserProfilePublicMemberPublic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserProfilePublicMember">
+      <soap12:operation soapAction="http://commonprofilesystem.starfieldtech.com.gdg/SetUserProfilePublicMember" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserProfile">
+    <wsdl:port name="UserProfileSoap" binding="tns:UserProfileSoap">
+      <soap:address location="http://www.dev.commonprofile-com.ide/UserProfile.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserProfileSoap12" binding="tns:UserProfileSoap12">
+      <soap12:address location="http://www.dev.commonprofile-com.ide/UserProfile.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

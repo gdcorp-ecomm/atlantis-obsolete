@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3207FC4-C30E-4992-9E71-7F7E5EB9431F}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.CouponProvision.vsmdi = Atlantis.Framework.CouponProvision.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.CouponProvision.Impl", "Atlantis.Framework.CouponProvision.Impl\Atlantis.Framework.CouponProvision.Impl.csproj", "{625C23A3-4053-4126-9159-26B2E228A3FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.CouponProvision.Interface", "Atlantis.Framework.CouponProvision.Interface\Atlantis.Framework.CouponProvision.Interface.csproj", "{BF2E61BE-D198-4A16-A89E-B84E205B17C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.CouponProvision.Tests", "Atlantis.Framework.CouponProvision.Tests\Atlantis.Framework.CouponProvision.Tests.csproj", "{DCCAD6F6-CE42-4A74-BC1C-D7A3064F9095}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B576F552-B222-4A6F-A512-3322A4131DC8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.CouponProvision.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.CouponProvision.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.CouponProvision.Impl\\Atlantis.Framework.CouponProvision.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.CouponProvision.Impl
+		SccLocalPath3 = Atlantis.Framework.CouponProvision.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.CouponProvision.Tests\\Atlantis.Framework.CouponProvision.Tests.csproj
+		SccProjectName4 = Atlantis.Framework.CouponProvision.Tests
+		SccLocalPath4 = Atlantis.Framework.CouponProvision.Tests
+		SccProjectUniqueName5 = Atlantis.Framework.CouponProvision.Interface\\Atlantis.Framework.CouponProvision.Interface.csproj
+		SccProjectName5 = Atlantis.Framework.CouponProvision.Interface
+		SccLocalPath5 = Atlantis.Framework.CouponProvision.Interface
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.CouponProvision.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625C23A3-4053-4126-9159-26B2E228A3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625C23A3-4053-4126-9159-26B2E228A3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625C23A3-4053-4126-9159-26B2E228A3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625C23A3-4053-4126-9159-26B2E228A3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2E61BE-D198-4A16-A89E-B84E205B17C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2E61BE-D198-4A16-A89E-B84E205B17C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2E61BE-D198-4A16-A89E-B84E205B17C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2E61BE-D198-4A16-A89E-B84E205B17C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCAD6F6-CE42-4A74-BC1C-D7A3064F9095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCAD6F6-CE42-4A74-BC1C-D7A3064F9095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCAD6F6-CE42-4A74-BC1C-D7A3064F9095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCAD6F6-CE42-4A74-BC1C-D7A3064F9095}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {B576F552-B222-4A6F-A512-3322A4131DC8}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {B576F552-B222-4A6F-A512-3322A4131DC8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?wsdl" filename="VideoMeExternalService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd3" filename="VideoMeExternalService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?wsdl=wsdl0" filename="VideoMeExternalService0.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd0" filename="VideoMeExternalService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd2" filename="VideoMeExternalService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://g1dwvidweb001.dc1.corp.gd/VideoMeExternalService.svc?xsd=xsd1" filename="VideoMeExternalService2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

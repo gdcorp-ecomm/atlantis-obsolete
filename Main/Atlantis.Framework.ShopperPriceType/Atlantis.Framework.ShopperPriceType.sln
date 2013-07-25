@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FCB13405-3A99-4BE5-BB58-FAC5A270B9FE}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.ShopperPriceType.vsmdi = Atlantis.Framework.ShopperPriceType.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ShopperPriceType.Interface", "Atlantis.Framework.ShopperPriceType.Interface\Atlantis.Framework.ShopperPriceType.Interface.csproj", "{7B5DE027-416D-4D07-8177-4F80A5767FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ShopperPriceType.Impl", "Atlantis.Framework.ShopperPriceType.Impl\Atlantis.Framework.ShopperPriceType.Impl.csproj", "{2B33A81D-8018-431E-B8A3-4DB94AFE49AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ShopperPriceType.Tests", "Atlantis.Framework.ShopperPriceType.Tests\Atlantis.Framework.ShopperPriceType.Tests.csproj", "{0552A4FF-59EA-4C58-AEC2-F97736328F07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FB647822-FB86-40DD-83E6-0271A597B776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.SessionCache", "..\Atlantis.Framework.SessionCache\Atlantis.Framework.SessionCache\Atlantis.Framework.SessionCache.csproj", "{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Testing.MockHttpContext", "..\Atlantis.Framework.Testing\Atlantis.Framework.Testing.MockHttpContext\Atlantis.Framework.Testing.MockHttpContext.csproj", "{5B0E8D0F-247E-4937-8177-48EA5E267CAB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.ShopperPriceType.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.ShopperPriceType.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName3 = Atlantis.Framework.ShopperPriceType.Interface\\Atlantis.Framework.ShopperPriceType.Interface.csproj
+		SccProjectName3 = Atlantis.Framework.ShopperPriceType.Interface
+		SccLocalPath3 = Atlantis.Framework.ShopperPriceType.Interface
+		SccProjectUniqueName4 = Atlantis.Framework.ShopperPriceType.Impl\\Atlantis.Framework.ShopperPriceType.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.ShopperPriceType.Impl
+		SccLocalPath4 = Atlantis.Framework.ShopperPriceType.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.ShopperPriceType.Tests\\Atlantis.Framework.ShopperPriceType.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.ShopperPriceType.Tests
+		SccLocalPath5 = Atlantis.Framework.ShopperPriceType.Tests
+		SccProjectUniqueName6 = ..\\Atlantis.Framework.SessionCache\\Atlantis.Framework.SessionCache\\Atlantis.Framework.SessionCache.csproj
+		SccProjectTopLevelParentUniqueName6 = Atlantis.Framework.ShopperPriceType.sln
+		SccProjectName6 = ../Atlantis.Framework.SessionCache/Atlantis.Framework.SessionCache
+		SccLocalPath6 = ..\\Atlantis.Framework.SessionCache\\Atlantis.Framework.SessionCache
+		SccProjectUniqueName7 = ..\\Atlantis.Framework.Testing\\Atlantis.Framework.Testing.MockHttpContext\\Atlantis.Framework.Testing.MockHttpContext.csproj
+		SccProjectTopLevelParentUniqueName7 = Atlantis.Framework.ShopperPriceType.sln
+		SccProjectName7 = ../Atlantis.Framework.Testing/Atlantis.Framework.Testing.MockHttpContext
+		SccLocalPath7 = ..\\Atlantis.Framework.Testing\\Atlantis.Framework.Testing.MockHttpContext
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.ShopperPriceType.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5DE027-416D-4D07-8177-4F80A5767FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5DE027-416D-4D07-8177-4F80A5767FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5DE027-416D-4D07-8177-4F80A5767FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5DE027-416D-4D07-8177-4F80A5767FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B33A81D-8018-431E-B8A3-4DB94AFE49AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B33A81D-8018-431E-B8A3-4DB94AFE49AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B33A81D-8018-431E-B8A3-4DB94AFE49AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B33A81D-8018-431E-B8A3-4DB94AFE49AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0552A4FF-59EA-4C58-AEC2-F97736328F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0552A4FF-59EA-4C58-AEC2-F97736328F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0552A4FF-59EA-4C58-AEC2-F97736328F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0552A4FF-59EA-4C58-AEC2-F97736328F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {FB647822-FB86-40DD-83E6-0271A597B776}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {FB647822-FB86-40DD-83E6-0271A597B776}
+		{8B9AA4D9-B932-40EB-9F36-52C55F2D3D09} = {FB647822-FB86-40DD-83E6-0271A597B776}
+		{5B0E8D0F-247E-4937-8177-48EA5E267CAB} = {FB647822-FB86-40DD-83E6-0271A597B776}
+	EndGlobalSection
+EndGlobal

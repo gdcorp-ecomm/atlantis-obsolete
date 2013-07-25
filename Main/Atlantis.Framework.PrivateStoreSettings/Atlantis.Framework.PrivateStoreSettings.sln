@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E3982FAB-5C3C-4435-80A3-522F63484B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.PrivateStoreSettings.Interface", "Atlantis.Framework.PrivateStoreSettings.Interface\Atlantis.Framework.PrivateStoreSettings.Interface.csproj", "{BFA8CDEE-8DF1-4A30-907C-74BAE91EC6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.PrivateStoreSettings.Impl", "Atlantis.Framework.PrivateStoreSettings.Impl\Atlantis.Framework.PrivateStoreSettings.Impl.csproj", "{45B3343D-973B-41B3-AF13-49A0677A2F5C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.PrivateStoreSettings.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName1 = Atlantis.Framework.PrivateStoreSettings.Interface\\Atlantis.Framework.PrivateStoreSettings.Interface.csproj
+		SccProjectName1 = Atlantis.Framework.PrivateStoreSettings.Interface
+		SccLocalPath1 = Atlantis.Framework.PrivateStoreSettings.Interface
+		SccProjectUniqueName2 = Atlantis.Framework.PrivateStoreSettings.Impl\\Atlantis.Framework.PrivateStoreSettings.Impl.csproj
+		SccProjectName2 = Atlantis.Framework.PrivateStoreSettings.Impl
+		SccLocalPath2 = Atlantis.Framework.PrivateStoreSettings.Impl
+		SccLocalPath3 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA8CDEE-8DF1-4A30-907C-74BAE91EC6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA8CDEE-8DF1-4A30-907C-74BAE91EC6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA8CDEE-8DF1-4A30-907C-74BAE91EC6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA8CDEE-8DF1-4A30-907C-74BAE91EC6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45B3343D-973B-41B3-AF13-49A0677A2F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B3343D-973B-41B3-AF13-49A0677A2F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B3343D-973B-41B3-AF13-49A0677A2F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B3343D-973B-41B3-AF13-49A0677A2F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {E3982FAB-5C3C-4435-80A3-522F63484B58}
+	EndGlobalSection
+EndGlobal

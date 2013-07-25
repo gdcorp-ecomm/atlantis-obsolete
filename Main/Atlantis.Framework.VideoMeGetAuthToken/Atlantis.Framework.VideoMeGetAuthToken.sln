@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3D2C278-D354-407A-8CF6-2227414E006F}"
+	ProjectSection(SolutionItems) = preProject
+		Atlantis.Framework.VideoMeGetAuthToken.vsmdi = Atlantis.Framework.VideoMeGetAuthToken.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.VideoMeGetAuthToken.Impl", "Atlantis.Framework.VideoMeGetAuthToken.Impl\Atlantis.Framework.VideoMeGetAuthToken.Impl.csproj", "{35F1B08B-E0D6-491C-8F57-4837DEAAB787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.VideoMeGetAuthToken.Interface", "Atlantis.Framework.VideoMeGetAuthToken.Interface\Atlantis.Framework.VideoMeGetAuthToken.Interface.csproj", "{99C974E2-BF82-41B6-92EA-4C28D21CDE60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.VideoMeGetAuthToken.Tests", "Atlantis.Framework.VideoMeGetAuthToken.Tests\Atlantis.Framework.VideoMeGetAuthToken.Tests.csproj", "{CDD63B4E-D28B-4F49-A554-FD190341B7F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{868C2795-9BE2-4072-9123-D29F9728DF1D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.VideoMeGetAuthToken.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.VideoMeGetAuthToken.sln
+		SccProjectName2 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName3 = Atlantis.Framework.VideoMeGetAuthToken.Impl\\Atlantis.Framework.VideoMeGetAuthToken.Impl.csproj
+		SccProjectName3 = Atlantis.Framework.VideoMeGetAuthToken.Impl
+		SccLocalPath3 = Atlantis.Framework.VideoMeGetAuthToken.Impl
+		SccProjectUniqueName4 = Atlantis.Framework.VideoMeGetAuthToken.Interface\\Atlantis.Framework.VideoMeGetAuthToken.Interface.csproj
+		SccProjectName4 = Atlantis.Framework.VideoMeGetAuthToken.Interface
+		SccLocalPath4 = Atlantis.Framework.VideoMeGetAuthToken.Interface
+		SccProjectUniqueName5 = Atlantis.Framework.VideoMeGetAuthToken.Tests\\Atlantis.Framework.VideoMeGetAuthToken.Tests.csproj
+		SccProjectName5 = Atlantis.Framework.VideoMeGetAuthToken.Tests
+		SccLocalPath5 = Atlantis.Framework.VideoMeGetAuthToken.Tests
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Atlantis.Framework.VideoMeGetAuthToken.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F1B08B-E0D6-491C-8F57-4837DEAAB787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F1B08B-E0D6-491C-8F57-4837DEAAB787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F1B08B-E0D6-491C-8F57-4837DEAAB787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F1B08B-E0D6-491C-8F57-4837DEAAB787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C974E2-BF82-41B6-92EA-4C28D21CDE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C974E2-BF82-41B6-92EA-4C28D21CDE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C974E2-BF82-41B6-92EA-4C28D21CDE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C974E2-BF82-41B6-92EA-4C28D21CDE60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD63B4E-D28B-4F49-A554-FD190341B7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD63B4E-D28B-4F49-A554-FD190341B7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD63B4E-D28B-4F49-A554-FD190341B7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD63B4E-D28B-4F49-A554-FD190341B7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {868C2795-9BE2-4072-9123-D29F9728DF1D}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {868C2795-9BE2-4072-9123-D29F9728DF1D}
+	EndGlobalSection
+EndGlobal

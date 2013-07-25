@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1624676E-F773-432D-8039-5BFFF0AD62A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{29E7CCC1-0F54-45F9-8492-62145046C625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ResourceSslBillingInfo.Impl", "Atlantis.Framework.ResourceSslBillingInfo.Impl\Atlantis.Framework.ResourceSslBillingInfo.Impl.csproj", "{9F833601-7DFF-4958-9C7A-5205578BE6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.ResourceSslBillingInfo.Interface", "Atlantis.Framework.ResourceSslBillingInfo.Interface\Atlantis.Framework.ResourceSslBillingInfo.Interface.csproj", "{46217289-28F3-4C5F-B59E-D74B8015B9B9}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "Atlantis.Framework.ResourceSslBillingInfo.Tests", "Atlantis.Framework.ResourceSslBillingInfo.Tests\Atlantis.Framework.ResourceSslBillingInfo.Tests.csproj", "{CBB9588D-DD15-4E79-91B3-758C9C1BB1B4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.ResourceSslBillingInfo.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.ResourceSslBillingInfo.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectTopLevelParentUniqueName2 = Atlantis.Framework.ResourceSslBillingInfo.sln
+		SccProjectName2 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccLocalPath2 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = Atlantis.Framework.ResourceSslBillingInfo.Impl\\Atlantis.Framework.ResourceSslBillingInfo.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.ResourceSslBillingInfo.Impl
+		SccLocalPath4 = Atlantis.Framework.ResourceSslBillingInfo.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.ResourceSslBillingInfo.Interface\\Atlantis.Framework.ResourceSslBillingInfo.Interface.csproj
+		SccProjectName5 = Atlantis.Framework.ResourceSslBillingInfo.Interface
+		SccLocalPath5 = Atlantis.Framework.ResourceSslBillingInfo.Interface
+		SccProjectUniqueName6 = Atlantis.Framework.ResourceSslBillingInfo.Tests\\Atlantis.Framework.ResourceSslBillingInfo.Tests.csproj
+		SccProjectName6 = Atlantis.Framework.ResourceSslBillingInfo.Tests
+		SccLocalPath6 = Atlantis.Framework.ResourceSslBillingInfo.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F833601-7DFF-4958-9C7A-5205578BE6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F833601-7DFF-4958-9C7A-5205578BE6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F833601-7DFF-4958-9C7A-5205578BE6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F833601-7DFF-4958-9C7A-5205578BE6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46217289-28F3-4C5F-B59E-D74B8015B9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46217289-28F3-4C5F-B59E-D74B8015B9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46217289-28F3-4C5F-B59E-D74B8015B9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46217289-28F3-4C5F-B59E-D74B8015B9B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB9588D-DD15-4E79-91B3-758C9C1BB1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB9588D-DD15-4E79-91B3-758C9C1BB1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB9588D-DD15-4E79-91B3-758C9C1BB1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB9588D-DD15-4E79-91B3-758C9C1BB1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {1624676E-F773-432D-8039-5BFFF0AD62A9}
+		{29E7CCC1-0F54-45F9-8492-62145046C625} = {1624676E-F773-432D-8039-5BFFF0AD62A9}
+		{17EBED78-9469-4678-96B1-A175AB221916} = {1624676E-F773-432D-8039-5BFFF0AD62A9}
+	EndGlobalSection
+EndGlobal

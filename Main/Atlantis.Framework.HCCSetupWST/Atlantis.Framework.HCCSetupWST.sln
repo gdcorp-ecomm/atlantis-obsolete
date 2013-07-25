@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9BFA78B9-ACB3-49E0-B8A6-B3DA9F7EF5D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.HCCSetupWST.Impl", "Atlantis.Framework.HCCSetupWST.Impl\Atlantis.Framework.HCCSetupWST.Impl.csproj", "{17A7C34F-67C1-404A-9355-D10F8CF2E7E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.HCCSetupWST.Interface", "Atlantis.Framework.HCCSetupWST.Interface\Atlantis.Framework.HCCSetupWST.Interface.csproj", "{EA60FC42-B8BA-4139-ACBC-76CC2B21BD6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.HCCSetupWST.Test", "Atlantis.Framework.HCCSetupWST.Test\Atlantis.Framework.HCCSetupWST.Test.csproj", "{D25B7AB9-48B8-4A34-99FE-AE1EC043A9CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.HCC.Interface", "..\Atlantis.Framework.HCC.Interface\Atlantis.Framework.HCC.Interface.csproj", "{EDAF9BF3-0605-4F44-95EF-D44254EE962B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName0 = ..\\Atlantis.Framework.HCCSetupWST.sln
+		SccProjectName0 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath0 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName1 = ..\\Atlantis.Framework.HCCSetupWST.sln
+		SccProjectName1 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath1 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccProjectUniqueName2 = ..\\Atlantis.Framework.HCC.Interface\\Atlantis.Framework.HCC.Interface.csproj
+		SccProjectTopLevelParentUniqueName2 = ..\\Atlantis.Framework.HCCSetupWST.sln
+		SccProjectName2 = ../Atlantis.Framework.HCC.Interface
+		SccLocalPath2 = ..\\Atlantis.Framework.HCC.Interface
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = Atlantis.Framework.HCCSetupWST.Impl\\Atlantis.Framework.HCCSetupWST.Impl.csproj
+		SccProjectName4 = Atlantis.Framework.HCCSetupWST.Impl
+		SccLocalPath4 = Atlantis.Framework.HCCSetupWST.Impl
+		SccProjectUniqueName5 = Atlantis.Framework.HCCSetupWST.Interface\\Atlantis.Framework.HCCSetupWST.Interface.csproj
+		SccProjectName5 = Atlantis.Framework.HCCSetupWST.Interface
+		SccLocalPath5 = Atlantis.Framework.HCCSetupWST.Interface
+		SccProjectUniqueName6 = Atlantis.Framework.HCCSetupWST.Test\\Atlantis.Framework.HCCSetupWST.Test.csproj
+		SccProjectName6 = Atlantis.Framework.HCCSetupWST.Test
+		SccLocalPath6 = Atlantis.Framework.HCCSetupWST.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A7C34F-67C1-404A-9355-D10F8CF2E7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A7C34F-67C1-404A-9355-D10F8CF2E7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A7C34F-67C1-404A-9355-D10F8CF2E7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A7C34F-67C1-404A-9355-D10F8CF2E7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA60FC42-B8BA-4139-ACBC-76CC2B21BD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA60FC42-B8BA-4139-ACBC-76CC2B21BD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA60FC42-B8BA-4139-ACBC-76CC2B21BD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA60FC42-B8BA-4139-ACBC-76CC2B21BD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25B7AB9-48B8-4A34-99FE-AE1EC043A9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25B7AB9-48B8-4A34-99FE-AE1EC043A9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25B7AB9-48B8-4A34-99FE-AE1EC043A9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25B7AB9-48B8-4A34-99FE-AE1EC043A9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAF9BF3-0605-4F44-95EF-D44254EE962B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAF9BF3-0605-4F44-95EF-D44254EE962B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAF9BF3-0605-4F44-95EF-D44254EE962B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAF9BF3-0605-4F44-95EF-D44254EE962B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {9BFA78B9-ACB3-49E0-B8A6-B3DA9F7EF5D4}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {9BFA78B9-ACB3-49E0-B8A6-B3DA9F7EF5D4}
+		{EDAF9BF3-0605-4F44-95EF-D44254EE962B} = {9BFA78B9-ACB3-49E0-B8A6-B3DA9F7EF5D4}
+	EndGlobalSection
+EndGlobal

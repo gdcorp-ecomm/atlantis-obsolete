@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D3CA314-7621-48E3-9624-746DA67A4003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.RenewalPeriods.Impl", "Atlantis.Framework.RenewalPeriods.Impl\Atlantis.Framework.RenewalPeriods.Impl.csproj", "{1C6FB98B-8200-4DDB-B4A6-2C0BDDDF4CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.RenewalPeriods.Interface", "Atlantis.Framework.RenewalPeriods.Interface\Atlantis.Framework.RenewalPeriods.Interface.csproj", "{B73CF926-4483-4C21-81D7-EA937B66A785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.RenewalPeriods.Test", "Atlantis.Framework.RenewalPeriods.Test\Atlantis.Framework.RenewalPeriods.Test.csproj", "{A2198796-FBC1-4D3E-8BBC-B9D71B94E643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = Atlantis.Framework.RenewalPeriods.Impl\\Atlantis.Framework.RenewalPeriods.Impl.csproj
+		SccProjectName0 = Atlantis.Framework.RenewalPeriods.Impl
+		SccLocalPath0 = Atlantis.Framework.RenewalPeriods.Impl
+		SccProjectUniqueName1 = Atlantis.Framework.RenewalPeriods.Interface\\Atlantis.Framework.RenewalPeriods.Interface.csproj
+		SccProjectName1 = Atlantis.Framework.RenewalPeriods.Interface
+		SccLocalPath1 = Atlantis.Framework.RenewalPeriods.Interface
+		SccProjectUniqueName2 = Atlantis.Framework.RenewalPeriods.Test\\Atlantis.Framework.RenewalPeriods.Test.csproj
+		SccProjectName2 = Atlantis.Framework.RenewalPeriods.Test
+		SccLocalPath2 = Atlantis.Framework.RenewalPeriods.Test
+		SccProjectUniqueName3 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine.csproj
+		SccProjectTopLevelParentUniqueName3 = Atlantis.Framework.RenewalPeriods.sln
+		SccProjectName3 = ../Atlantis.Framework.Engine/Atlantis.Framework.Engine
+		SccLocalPath3 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Engine
+		SccProjectUniqueName4 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface\\Atlantis.Framework.Interface.csproj
+		SccProjectTopLevelParentUniqueName4 = Atlantis.Framework.RenewalPeriods.sln
+		SccProjectName4 = ../Atlantis.Framework.Engine/Atlantis.Framework.Interface
+		SccLocalPath4 = ..\\Atlantis.Framework.Engine\\Atlantis.Framework.Interface
+		SccLocalPath5 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C6FB98B-8200-4DDB-B4A6-2C0BDDDF4CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6FB98B-8200-4DDB-B4A6-2C0BDDDF4CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6FB98B-8200-4DDB-B4A6-2C0BDDDF4CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6FB98B-8200-4DDB-B4A6-2C0BDDDF4CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73CF926-4483-4C21-81D7-EA937B66A785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73CF926-4483-4C21-81D7-EA937B66A785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73CF926-4483-4C21-81D7-EA937B66A785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73CF926-4483-4C21-81D7-EA937B66A785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2198796-FBC1-4D3E-8BBC-B9D71B94E643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2198796-FBC1-4D3E-8BBC-B9D71B94E643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2198796-FBC1-4D3E-8BBC-B9D71B94E643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2198796-FBC1-4D3E-8BBC-B9D71B94E643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {8D3CA314-7621-48E3-9624-746DA67A4003}
+		{2474F971-3E1D-4608-9D60-B0A9A1CA8D13} = {8D3CA314-7621-48E3-9624-746DA67A4003}
+	EndGlobalSection
+EndGlobal

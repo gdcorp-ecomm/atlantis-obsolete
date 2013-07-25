@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreateIncident">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateIncidentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateIncidentResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchIncidents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlInput" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchIncidentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchIncidentsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerNotes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlIncidentID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerNotesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerNotesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentNote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentNoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddIncidentNoteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentAttachments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIncidentAttachmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIncidentAttachmentsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentResolvedVote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddIncidentResolvedVoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddIncidentResolvedVoteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateIncidentSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateIncident" />
+  </wsdl:message>
+  <wsdl:message name="CreateIncidentSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateIncidentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchIncidentsSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchIncidents" />
+  </wsdl:message>
+  <wsdl:message name="SearchIncidentsSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchIncidentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerNotesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerNotes" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerNotesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentNoteSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentNote" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentNoteSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentAttachmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIncidentAttachments" />
+  </wsdl:message>
+  <wsdl:message name="GetIncidentAttachmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIncidentAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentResolvedVoteSoapIn">
+    <wsdl:part name="parameters" element="tns:AddIncidentResolvedVote" />
+  </wsdl:message>
+  <wsdl:message name="AddIncidentResolvedVoteSoapOut">
+    <wsdl:part name="parameters" element="tns:AddIncidentResolvedVoteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IrisCommunityServiceSoap">
+    <wsdl:operation name="CreateIncident">
+      <wsdl:input message="tns:CreateIncidentSoapIn" />
+      <wsdl:output message="tns:CreateIncidentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchIncidents">
+      <wsdl:input message="tns:SearchIncidentsSoapIn" />
+      <wsdl:output message="tns:SearchIncidentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerNotes">
+      <wsdl:input message="tns:GetCustomerNotesSoapIn" />
+      <wsdl:output message="tns:GetCustomerNotesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentNote">
+      <wsdl:input message="tns:AddIncidentNoteSoapIn" />
+      <wsdl:output message="tns:AddIncidentNoteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentAttachments">
+      <wsdl:input message="tns:GetIncidentAttachmentsSoapIn" />
+      <wsdl:output message="tns:GetIncidentAttachmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolvedVote">
+      <wsdl:input message="tns:AddIncidentResolvedVoteSoapIn" />
+      <wsdl:output message="tns:AddIncidentResolvedVoteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IrisCommunityServiceSoap" type="tns:IrisCommunityServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateIncident">
+      <soap:operation soapAction="http://tempuri.org/CreateIncident" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchIncidents">
+      <soap:operation soapAction="http://tempuri.org/SearchIncidents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerNotes">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentNote">
+      <soap:operation soapAction="http://tempuri.org/AddIncidentNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentAttachments">
+      <soap:operation soapAction="http://tempuri.org/GetIncidentAttachments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolvedVote">
+      <soap:operation soapAction="http://tempuri.org/AddIncidentResolvedVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IrisCommunityServiceSoap12" type="tns:IrisCommunityServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateIncident">
+      <soap12:operation soapAction="http://tempuri.org/CreateIncident" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchIncidents">
+      <soap12:operation soapAction="http://tempuri.org/SearchIncidents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerNotes">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerNotes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentNote">
+      <soap12:operation soapAction="http://tempuri.org/AddIncidentNote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncidentAttachments">
+      <soap12:operation soapAction="http://tempuri.org/GetIncidentAttachments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIncidentResolvedVote">
+      <soap12:operation soapAction="http://tempuri.org/AddIncidentResolvedVote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IrisCommunityService">
+    <wsdl:port name="IrisCommunityServiceSoap" binding="tns:IrisCommunityServiceSoap">
+      <soap:address location="http://iris-ws.dev.godaddy-com.ide/Iris/IrisCommunityService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IrisCommunityServiceSoap12" binding="tns:IrisCommunityServiceSoap12">
+      <soap12:address location="http://iris-ws.dev.godaddy-com.ide/Iris/IrisCommunityService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

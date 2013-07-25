@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A3078109-8C29-47F1-8693-4E2EE38E6CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Engine", "..\Atlantis.Framework.Engine\Atlantis.Framework.Engine\Atlantis.Framework.Engine.csproj", "{092618E1-1F37-422C-82AF-17A1337B8986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Interface", "..\Atlantis.Framework.Engine\Atlantis.Framework.Interface\Atlantis.Framework.Interface.csproj", "{29E7CCC1-0F54-45F9-8492-62145046C625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProduct.Interface", "..\Atlantis.Framework.MyaProduct\Atlantis.Framework.MyaProduct.Interface\Atlantis.Framework.MyaProduct.Interface.csproj", "{E0BF15B6-2A3A-4EE9-8080-495678392100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.Nimitz", "..\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz\Atlantis.Framework.Nimitz.csproj", "{17EBED78-9469-4678-96B1-A175AB221916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductReseller.Impl", "Atlantis.Framework.MyaProductReseller.Impl\Atlantis.Framework.MyaProductReseller.Impl.csproj", "{123FCF4B-2A38-43F4-944C-6C568BF41D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantis.Framework.MyaProductReseller.Interface", "Atlantis.Framework.MyaProductReseller.Interface\Atlantis.Framework.MyaProductReseller.Interface.csproj", "{8748935D-F969-49F6-9463-C35299A9F239}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "Atlantis.Framework.MyaProductReseller.Tests", "Atlantis.Framework.MyaProductReseller.Tests\Atlantis.Framework.MyaProductReseller.Tests.csproj", "{74B94D6A-43EE-42F8-A97D-7F37A0D9918C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface\\Atlantis.Framework.MyaProduct.Interface.csproj
+		SccProjectTopLevelParentUniqueName0 = Atlantis.Framework.MyaProductReseller.sln
+		SccProjectName0 = ../Atlantis.Framework.MyaProduct/Atlantis.Framework.MyaProduct.Interface
+		SccAuxPath0 = http://tfs:8080
+		SccLocalPath0 = ..\\Atlantis.Framework.MyaProduct\\Atlantis.Framework.MyaProduct.Interface
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz.csproj
+		SccProjectTopLevelParentUniqueName1 = Atlantis.Framework.MyaProductReseller.sln
+		SccProjectName1 = ../Atlantis.Framework.Nimitz/Atlantis.Framework.Nimitz
+		SccAuxPath1 = http://tfs:8080
+		SccLocalPath1 = ..\\Atlantis.Framework.Nimitz\\Atlantis.Framework.Nimitz
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092618E1-1F37-422C-82AF-17A1337B8986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E7CCC1-0F54-45F9-8492-62145046C625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0BF15B6-2A3A-4EE9-8080-495678392100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EBED78-9469-4678-96B1-A175AB221916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123FCF4B-2A38-43F4-944C-6C568BF41D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123FCF4B-2A38-43F4-944C-6C568BF41D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123FCF4B-2A38-43F4-944C-6C568BF41D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123FCF4B-2A38-43F4-944C-6C568BF41D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8748935D-F969-49F6-9463-C35299A9F239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8748935D-F969-49F6-9463-C35299A9F239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8748935D-F969-49F6-9463-C35299A9F239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8748935D-F969-49F6-9463-C35299A9F239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B94D6A-43EE-42F8-A97D-7F37A0D9918C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B94D6A-43EE-42F8-A97D-7F37A0D9918C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B94D6A-43EE-42F8-A97D-7F37A0D9918C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B94D6A-43EE-42F8-A97D-7F37A0D9918C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092618E1-1F37-422C-82AF-17A1337B8986} = {A3078109-8C29-47F1-8693-4E2EE38E6CA1}
+		{29E7CCC1-0F54-45F9-8492-62145046C625} = {A3078109-8C29-47F1-8693-4E2EE38E6CA1}
+		{E0BF15B6-2A3A-4EE9-8080-495678392100} = {A3078109-8C29-47F1-8693-4E2EE38E6CA1}
+		{17EBED78-9469-4678-96B1-A175AB221916} = {A3078109-8C29-47F1-8693-4E2EE38E6CA1}
+	EndGlobalSection
+EndGlobal

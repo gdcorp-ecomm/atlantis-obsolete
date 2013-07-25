@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="DomainsBot.TypoGenerator" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="DomainsBot.TypoGenerator" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DomainsBot TypoGenerator v1.0 XML WebService</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="DomainsBot.TypoGenerator">
+      <s:element name="GetTypos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tlds" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="characterReplacement" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="characterPermutation" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="characterOmission" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="doubledCharacter" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="missingDot" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="excludeNumbers" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="limit" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTyposResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTyposResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTyposSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTypos" />
+  </wsdl:message>
+  <wsdl:message name="GetTyposSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTyposResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTyposHttpGetIn">
+    <wsdl:part name="domain" type="s:string" />
+    <wsdl:part name="tlds" type="s:string" />
+    <wsdl:part name="characterReplacement" type="s:string" />
+    <wsdl:part name="characterPermutation" type="s:string" />
+    <wsdl:part name="characterOmission" type="s:string" />
+    <wsdl:part name="doubledCharacter" type="s:string" />
+    <wsdl:part name="missingDot" type="s:string" />
+    <wsdl:part name="excludeNumbers" type="s:string" />
+    <wsdl:part name="limit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTyposHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="GetTyposHttpPostIn">
+    <wsdl:part name="domain" type="s:string" />
+    <wsdl:part name="tlds" type="s:string" />
+    <wsdl:part name="characterReplacement" type="s:string" />
+    <wsdl:part name="characterPermutation" type="s:string" />
+    <wsdl:part name="characterOmission" type="s:string" />
+    <wsdl:part name="doubledCharacter" type="s:string" />
+    <wsdl:part name="missingDot" type="s:string" />
+    <wsdl:part name="excludeNumbers" type="s:string" />
+    <wsdl:part name="limit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTyposHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:portType name="TypoGeneratorSoap">
+    <wsdl:operation name="GetTypos">
+      <wsdl:input message="tns:GetTyposSoapIn" />
+      <wsdl:output message="tns:GetTyposSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TypoGeneratorHttpGet">
+    <wsdl:operation name="GetTypos">
+      <wsdl:input message="tns:GetTyposHttpGetIn" />
+      <wsdl:output message="tns:GetTyposHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TypoGeneratorHttpPost">
+    <wsdl:operation name="GetTypos">
+      <wsdl:input message="tns:GetTyposHttpPostIn" />
+      <wsdl:output message="tns:GetTyposHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TypoGeneratorSoap" type="tns:TypoGeneratorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTypos">
+      <soap:operation soapAction="DomainsBot.TypoGenerator/GetTypos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TypoGeneratorSoap12" type="tns:TypoGeneratorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTypos">
+      <soap12:operation soapAction="DomainsBot.TypoGenerator/GetTypos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TypoGeneratorHttpGet" type="tns:TypoGeneratorHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetTypos">
+      <http:operation location="/GetTypos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TypoGeneratorHttpPost" type="tns:TypoGeneratorHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetTypos">
+      <http:operation location="/GetTypos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TypoGenerator">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">DomainsBot TypoGenerator v1.0 XML WebService</wsdl:documentation>
+    <wsdl:port name="TypoGeneratorSoap" binding="tns:TypoGeneratorSoap">
+      <soap:address location="http://xml.domainsbot.com/xmlservices/typogenerator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TypoGeneratorSoap12" binding="tns:TypoGeneratorSoap12">
+      <soap12:address location="http://xml.domainsbot.com/xmlservices/typogenerator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TypoGeneratorHttpGet" binding="tns:TypoGeneratorHttpGet">
+      <http:address location="http://xml.domainsbot.com/xmlservices/typogenerator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TypoGeneratorHttpPost" binding="tns:TypoGeneratorHttpPost">
+      <http:address location="http://xml.domainsbot.com/xmlservices/typogenerator.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
