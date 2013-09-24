@@ -42,6 +42,14 @@
     <Reference Include="Atlantis.Framework.AppSettings.Interface">
       <HintPath>..\packages\Atlantis.Framework.AppSettings.Interface.4.0.0.0\lib\net40\Atlantis.Framework.AppSettings.Interface.dll</HintPath>
     </Reference>
+    <Reference Include="Atlantis.Framework.CDS.Impl, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Atlantis.Framework.CDS.4.0.0.0\lib\net40\Atlantis.Framework.CDS.Impl.dll</HintPath>
+    </Reference>
+    <Reference Include="Atlantis.Framework.CDS.Interface, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Atlantis.Framework.CDS.Interface.4.0.0.0\lib\net40\Atlantis.Framework.CDS.Interface.dll</HintPath>
+    </Reference>
     <Reference Include="Atlantis.Framework.DataCache">
       <HintPath>..\packages\Atlantis.Framework.DataCache.4.0.0.0\lib\net40\Atlantis.Framework.DataCache.dll</HintPath>
     </Reference>
@@ -111,14 +119,6 @@
     <Compile Include="TokenHandlers\CurrencyPriceUnitTestTokenHandler.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\4.0\Atlantis.Framework.CDS\Atlantis.Framework.CDS.Impl\Atlantis.Framework.CDS.Impl.csproj">
-      <Project>{813511ae-2721-4a3b-9894-e1fb6ac41449}</Project>
-      <Name>Atlantis.Framework.CDS.Impl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\4.0\Atlantis.Framework.CDS\Atlantis.Framework.CDS.Interface\Atlantis.Framework.CDS.Interface.csproj">
-      <Project>{43ecc9f8-c897-4ae0-8c53-22b2691d6995}</Project>
-      <Name>Atlantis.Framework.CDS.Interface</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\4.0\Atlantis.Framework.CDS\Atlantis.Framework.CDS.Tokenizer\Atlantis.Framework.CDS.Tokenizer.csproj">
       <Project>{d63d703c-4459-446a-9f05-3fbc0074bb24}</Project>
       <Name>Atlantis.Framework.CDS.Tokenizer</Name>
