@@ -1,6 +1,8 @@
 using System;
+using System.Threading.Tasks;
 using Atlantis.Framework.GetShopper.Interface;
 using Atlantis.Framework.Interface;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Atlantis.Framework.GetShopper.Impl
 {
@@ -21,6 +23,14 @@ namespace Atlantis.Framework.GetShopper.Impl
         {
           oShopperWS.Url = ((WsConfigElement)oConfig).WSURL;
           oShopperWS.Timeout = (int)oShopperData.RequestTimeout.TotalMilliseconds;
+          
+          X509Certificate2 clientCert = null;
+          clientCert = ((WsConfigElement)oConfig).GetClientCertificate();
+          if (clientCert != null) 
+          {
+              oShopperWS.ClientCertificates.Add(clientCert);
+          }
+          
           string sRequestXML = oShopperData.ToXML();
           sResultXML = oShopperWS.GetShopper(sRequestXML);
         }
