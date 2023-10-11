@@ -1,0 +1,39 @@
+[tool.tartufo]
+repo-path = "."
+json = false
+regex = true
+entropy = true
+
+exclude-entropy-patterns = [
+	{path-pattern='.*', pattern='PublicKeyToken=[a-fA-F0-9]+?', reason = 'PublicKeyToken'},
+	{path-pattern='.*', pattern='Atlantis_Framework_[\w_]+?', reason = 'Web service name'},	
+	{path-pattern='.*', pattern='Get[\w]+?(Args|Async|Enabled|Handler|In|Out|ApplicationForumId)', reason = 'Method name'},	
+	{path-pattern='.*', pattern='Confirm[\w]+?Args', reason = 'Method name'},
+	{path-pattern='.*', pattern='Validate[\w]+?Args', reason = 'Method name'},
+	{path-pattern='.*', pattern='Update[\w]+?Args', reason = 'Method name'},
+	{path-pattern='.*', pattern='Update[\w]+?Args', reason = 'Method name'},
+	{path-pattern='.*', pattern='(3f)?Handler=[\w]+?WSDL', reason = 'Web service handler'},	
+	{path-pattern='.*', pattern='gd[\w_]+?_sp', reason = 'Stored procedure name'},
+	{path-pattern='.*', pattern='Impl\/(Mya|MYA|Mktg)[\w]+?Request', reason = 'Request path'},
+	{path-pattern='.*', pattern='/ORDER/ITEMS/[\w_\/]*', reason = 'XML Path'},
+	{path-pattern='.*', pattern='MockAppSettingRequest_[\w]+?', reason = 'Mock application settings request'},  
+]
+
+exclude-path-patterns = [
+	{path-pattern='.*Tests\.cs$', reason='Test files'},
+	{path-pattern='.*\.Test[s]?\/.*\.cs$', reason='Test files'},
+	{path-pattern='.*SampleResponse.xml$', reason='Response sample file'},
+	{path-pattern='.*(Tests|Diagnostics)\/atlantis.config$', reason='Atlantis configuration files'},
+	{path-pattern='.*app.config$', reason='Atlantis installer project'},
+	{path-pattern='.*Atlantis.Installer.vdproj$', reason='Atlantis installer project'},
+	{path-pattern='.*LocalTestRun.testrunconfig$', reason='Local tests configuration file'},
+	{path-pattern='.*Tests\/Properties\/.*\.resx$', reason='Test data in resource files'},
+	{path-pattern='.*CDCustomerWebSvc.wsdl$', reason='WSDL file'},
+	
+	
+]
+
+exclude-signatures = [ 
+	
+]
+
